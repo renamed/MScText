@@ -1,0 +1,701 @@
+
+% 	\begin{center}
+% 	\begin{longtable}{cccccc}
+%    \toprule
+%    \rowcolor{white}
+%    \caption[Metodologia I: comparativo de convergência de soluções]{Comparativo
+%    de quantidade de experimentos cujas soluções convergiram com e sem a
+%    utilização do GARCH na metodologia I} \label{Tab:convergenciaMet1} \\
+%    \midrule
+%    Cenário & \specialcell{Total de\\experimentos} & Convergiram &
+%    \specialcell{Não\\convergiram} & \% sucesso \\
+%    \midrule
+%    \endfirsthead
+%    \midrule
+%    Cenário & \specialcell{Total de\\experimentos} & Convergiram &
+%    \specialcell{Não\\convergiram} & \% sucesso \\
+%    \toprule
+% \endhead
+% \midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+% \endfoot
+% \bottomrule
+% \endlastfoot
+% 	\specialcell{Sem\\GARCH} & 39 & 39 & 0 & 100\% \\
+% 	\specialcell{Com\\GARCH} & 39 & 39 & 0 & 100\% \\
+%    \end{longtable}
+% \end{center}
+
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia I: comparativo de convergência de soluções]{Comparativo
+   de quantidade de experimentos cujas soluções convergiram com e sem a
+   utilização do GARCH na metodologia I} \label{Tab:convergenciaMet1} \\
+\midrule
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+	Sem GARCH & 39 & 39 & 0 & 100\% \\
+	Com GARCH & 39 & 39 & 0 & 100\% \\
+\end{longtable}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia I: Razão de compressão]{Razão de compressão dos
+experimentos sem e com GARCH na Metodologia I.
+Valores em bytes.} \label{Tab:razaocompressaoMet1} \\
+\midrule
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    A1    & 1.152.000 & 794.154 & 799.754 & 1,45  & 1,44 \\
+    A2    & 1.152.000 & 810.837 & 807.474 & 1,42  & 1,43 \\
+    A3    & 1.152.000 & 849.166 & 777.687 & 1,36  & 1,48 \\
+    B1    & 518.592 & 139.515 & 139.579 & 3,72  & 3,72 \\
+    B2    & 518.592 & 139.515 & 139.579 & 3,72  & 3,72 \\
+    B3    & 518.592 & 139.515 & 139.579 & 3,72  & 3,72 \\
+    C1    & 288.192 & 269.439 & 268.459 & 1,07  & 1,07 \\
+    C2    & 288.192 & 252.100 & 248.683 & 1,14  & 1,16 \\
+    C3    & 288.192 & 262.120 & 261.580 & 1,10  & 1,10 \\
+    D1    & 331.200 & 263.433 & 262.951 & 1,26  & 1,26 \\
+    D2    & 331.200 & 269.539 & 266.710 & 1,23  & 1,24 \\
+    D3    & 331.200 & 252.766 & 252.104 & 1,31  & 1,31 \\
+    E1    & 33.792 & 30.478 & 30.493 & 1,11  & 1,11 \\
+    E2    & 33.792 & 30.727 & 30.791 & 1,10  & 1,10 \\
+    E3    & 33.792 & 30.805 & 30.833 & 1,10  & 1,10 \\
+    F1    & 220.992 & 196.644 & 196.550 & 1,12  & 1,12 \\
+    F2    & 220.992 & 126.723 & 140.097 & 1,74  & 1,58 \\
+    F3    & 220.992 & 126.619 & 121.146 & 1,75  & 1,82 \\
+    G1    & 139.392 & 125.472 & 125.441 & 1,11  & 1,11 \\
+    G2    & 139.392 & 73.085 & 71.422 & 1,91  & 1,95 \\
+    G3    & 139.392 & 90.724 & 91.141 & 1,54  & 1,53 \\
+    H1    & 360.192 & 329.901 & 329.972 & 1,09  & 1,09 \\
+    H2    & 360.192 & 298.070 & 296.679 & 1,21  & 1,21 \\
+    H3    & 360.192 & 297.604 & 297.831 & 1,21  & 1,21 \\
+    I1    & 221.184 & 162.771 & 160.984 & 1,36  & 1,37 \\
+    I2    & 221.184 & 119.041 & 118.195 & 1,86  & 1,87 \\
+    I3    & 221.184 & 168.399 & 167.992 & 1,31  & 1,32 \\
+    J1    & 591.936 & 315.744 & 315.808 & 1,87  & 1,87 \\
+    J2    & 591.936 & 311.716 & 311.780 & 1,90  & 1,90 \\
+    J3    & 591.936 & 312.195 & 312.259 & 1,90  & 1,90 \\
+    K1    & 288.000 & 191.319 & 195.897 & 1,51  & 1,47 \\
+    K2    & 288.000 & 199.646 & 196.999 & 1,44  & 1,46 \\
+    K3    & 288.000 & 207.779 & 190.189 & 1,39  & 1,51 \\
+    L1    & 480.192 & 394.458 & 394.713 & 1,22  & 1,22 \\
+    L2    & 480.192 & 386.879 & 402.787 & 1,24  & 1,19 \\
+    L3    & 480.192 & 405.944 & 401.755 & 1,18  & 1,20 \\
+    L4    & 480.192 & 384.725 & 400.005 & 1,25  & 1,20 \\
+    L5    & 480.192 & 378.388 & 376.636 & 1,27  & 1,27 \\
+    L6    & 480.192 & 383.957 & 383.160 & 1,25  & 1,25 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetI00.png} 
+% \caption[Metodologia I: razão de compressão dos conjuntos A, B e C]{Gráfico com
+% comparativo da razão de compressão dos conjuntos A, B e C sem e com GARCH na
+% Metodologia I}
+% \label{Figura:razaocompressaoABCMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetI01.png} 
+% \caption[Metodologia I: razão de compressão dos conjuntos D, E e F]{Gráfico com
+% comparativo da razão de compressão dos conjuntos D, E e F sem e com GARCH na
+% Metodologia I}
+% \label{Figura:razaocompressaoDEFMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetI02.png} 
+% \caption[Metodologia I: razão de compressão dos conjuntos G, H e I]{Gráfico com
+% comparativo da razão de compressão dos conjuntos G, H e I sem e com GARCH na
+% Metodologia I}
+% \label{Figura:razaocompressaoGHIMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetI03.png} 
+% \caption[Metodologia I: razão de compressão dos conjuntos J, K e L]{Gráfico com
+% comparativo da razão de compressão dos conjuntos J, K e L sem e com GARCH na
+% Metodologia I}
+% \label{Figura:razaocompressaoJKLMet1}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.9]{fig/res/razaocompMetI04.png} 
+% \caption[Metodologia I: razão de compressão]{Gráfico com comparativo da razão de
+% compressão na Metodologia I}
+% \label{Figura:razaocompressaoPizzaMet1}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia I: evolução da entropia]{Evolução da entropia do dado
+original e do resíduo calculado na metodologia I}
+\label{tab:EvolucaoEntropiaMet1}\\
+\midrule
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 11,30 & 10,91 & 10,89 \\
+    A2    & 11,30 & 10,47 & 10,44 \\
+    A3    & 11,27 & 10,58 & 10,56 \\
+    B1    & 7,64  & 3,24  & 3,24 \\
+    B2    & 7,64  & 3,24  & 3,24 \\
+    B3    & 7,64  & 3,24  & 3,24 \\
+    C1    & 12,34 & 12,00 & 11,99 \\
+    C2    & 13,18 & 12,64 & 12,58 \\
+    C3    & 13,17 & 12,64 & 12,63 \\
+    D1    & 9,48  & 9,35  & 9,35 \\
+    D2    & 12,38 & 11,41 & 11,36 \\
+    D3    & 6,45  & 6,20  & 6,26 \\
+    E1    & 10,80 & 10,86 & 10,84 \\
+    E2    & 10,78 & 10,86 & 10,87 \\
+    E3    & 10,80 & 10,86 & 10,88 \\
+    F1    & 10,20 & 10,12 & 10,16 \\
+    F2    & 8,20  & 6,98  & 7,09 \\
+    F3    & 9,27  & 7,20  & 7,13 \\
+    G1    & 12,03 & 11,87 & 11,90 \\
+    G2    & 11,79 & 7,56  & 7,33 \\
+    G3    & 12,06 & 8,86  & 8,86 \\
+    H1    & 8,44  & 8,45  & 8,44 \\
+    H2    & 12,29 & 12,02 & 12,01 \\
+    H3    & 12,33 & 12,09 & 12,09 \\
+    I1    & 8,14  & 7,55  & 7,54 \\
+    I2    & 9,59  & 7,11  & 6,97 \\
+    I3    & 8,15  & 7,76  & 7,85 \\
+    J1    & 8,50  & 6,42  & 6,42 \\
+    J2    & 8,52  & 6,45  & 6,45 \\
+    J3    & 8,53  & 6,44  & 6,44 \\
+    K1    & 10,94 & 9,92  & 9,91 \\
+    K2    & 10,89 & 9,88  & 9,85 \\
+    K3    & 10,87 & 9,87  & 9,84 \\
+    L1    & 11,27 & 12,10 & 12,02 \\
+    L2    & 11,08 & 12,38 & 12,27 \\
+    L3    & 11,31 & 12,70 & 12,70 \\
+    L4    & 12,80 & 11,97 & 11,80 \\
+    L5    & 10,67 & 11,21 & 11,21 \\
+    L6    & 11,58 & 11,81 & 11,81 \\
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetI00.png} 
+% \caption[Metodologia I: evolução da entropia nos conjuntos A, B e C]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos A, B e C sem e com GARCH na
+% Metodologia I}
+% \label{Figura:evolucaoentropiaABCMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetI01.png} 
+% \caption[Metodologia I: evolução da entropia nos conjuntos D, E e F]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos D, E e F sem e com GARCH na
+% Metodologia I}
+% \label{Figura:evolucaoentropiaDEFMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetI02.png} 
+% \caption[Metodologia I: evolução da entropia nos conjuntos G, H e I]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos G, H e I sem e com GARCH na
+% Metodologia I}
+% \label{Figura:evolucaoentropiaGHIMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetI03.png} 
+% \caption[Metodologia I: evolução da entropia nos conjuntos J e K]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos J e K sem e com GARCH na
+% Metodologia I}
+% \label{Figura:evolucaoentropiaJKMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetI04.png} 
+% \caption[Metodologia I: evolução da entropia nos conjuntos L]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos L sem e com GARCH na
+% Metodologia I}
+% \label{Figura:evolucaoentropiaLMet1}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1]{fig/res/evolucaoentropiaMetI05.png} 
+% \caption[Metodologia I: evolução da entropia]{Gráfico com comparativo da
+% evolução da entopia na Metodologia I}
+% \label{Figura:evolucaoentropiaPizzaMet1}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia I: tempo de execução]{Tempo de execução (em segundos)
+dos algoritmos sem e com GARCH na metodologia I. Primeiro é exibido o tempo de
+execução sem a utilização do modelo GARCH, depois com o modelo. Parâmetros
+modelo se refere ao tempo gasto pelo algoritmo para o cálculo dos parâmetros do
+modelo, Resíduo refere-se ao tempo gasto pelo modelo para calcular o resíduo do
+modelo, Cod. Arit. refere-se ao tempo gasto pela codificação aritmética para
+comprimir o resíduo.} \label{tab:EvolucaoEntropiaMet1}\\
+\midrule
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1&70&1&4&75&1.057&1&3&1.061\\
+A2&70&1&3&73&1.233&1&3&1.237\\
+A3&64&2&8&74&1.499&2&3&1.504\\
+B1&30&1&3&34&63&$<1$&1&65\\
+B2&32&1&3&37&61&$<1$&1&63\\
+B3&34&1&2&38&60&$<1$&1&61\\
+C1&16&$<1$&1&18&311&$<1$&1&312\\
+C2&14&$<1$&1&15&160&$<1$&1&161\\
+C3&14&$<1$&1&15&271&$<1$&1&272\\
+D1&15&$<1$&2&17&152&1&2&155\\
+D2&16&1&3&20&306&1&2&309\\
+D3&18&$<1$&1&19&295&$<1$&1&296\\
+E1&9&$<1$&0&9&66&$<1$&0&67\\
+E2&11&1&1&12&53&1&1&54\\
+E3&5&$<1$&0&5&33&$<1$&0&34\\
+F1&6&$<1$&3&9&199&1&2&202\\
+F2&15&1&1&17&332&$<1$&0&332\\
+F3&15&$<1$&1&16&346&1&2&349\\
+G1&7&1&2&9&136&$<1$&1&137\\
+G2&14&$<1$&0&14&351&$<1$&0&352\\
+G3&13&1&$<1$&14&204&$<1$&0&205\\
+H1&17&1&4&21&54&1&4&59\\
+H2&22&1&4&27&506&$<1$&1&508\\
+H3&17&1&4&21&274&1&4&279\\
+I1&17&1&2&19&176&$<1$&1&177\\
+I2&85&1&1&88&186&$<1$&0&186\\
+I3&13&1&1&15&324&1&2&327\\
+J1&39&$<1$&1&41&77&2&2&81\\
+J2&36&1&4&41&73&$<1$&2&76\\
+J3&35&$<1$&3&39&78&$<1$&1&80\\
+K1&16&$<1$&1&17&247&$<1$&1&248\\
+K2&18&1&2&21&252&1&2&255\\
+K3&16&1&2&18&267&1&2&270\\
+L1&38&1&5&44&1.328&$<1$&2&1.330\\
+L2&166&1&5&172&1.073&1&4&1.079\\
+L3&38&1&5&44&853&$<1$&5&858\\
+L4&293&1&4&298&1.222&1&2&1.225\\
+L5&49&1&5&55&1.579&1&1&1.581\\
+L6&29&$<1$&2&30&396&2&3&401\\
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetI00.png} 
+% \caption[Metodologia I: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos A, B, C e D]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos A, B, C e D sem e com GARCH na Metodologia I}
+% \label{Figura:tempocalculoABCDMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetI01.png} 
+% \caption[Metodologia I: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos E, F e G]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos E, F e G sem e com GARCH na Metodologia I}
+% \label{Figura:tempocalculoEFGMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetI02.png} 
+% \caption[Metodologia I: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos H, I e J]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos H, I e J sem e com GARCH na Metodologia I}
+% \label{Figura:tempocalculoHIJMet1}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetI03.png} 
+% \caption[Metodologia I: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos K e L]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos K e L sem e com GARCH na Metodologia I}
+% \label{Figura:tempocalculoKLMet1}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetI04.png} 
+% \caption[Metodologia I: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo do tempo total relativo de cálculo
+% dos parâmetros dos modelos sem e com GARCH na Metodologia I}
+% \label{Figura:tempocalculoPizzaMet1}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia I: evolução da autocorrelação]{Autocorrelação do dado
+original e dos resíduos gerados sem e com a utilização do modelo GARCH}
+\label{tab:EvolucaoAutocorrelacaoMet1}\\
+\midrule
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 6     & 0     & 0 \\
+    A2    & 5     & 0     & 0 \\
+    A3    & 6     & 0     & 0 \\
+    B1    & 6     & 2     & 0 \\
+    B2    & 6     & 2     & 0 \\
+    B3    & 6     & 2     & 2 \\
+    C1    & 2     & 1     & 1 \\
+    C2    & 1     & 3     & 3 \\
+    C3    & 2     & 5     & 3 \\
+    D1    & 2     & 0     & 0 \\
+    D2    & 2     & 0     & 0 \\
+    D3    & 2     & 0     & 0 \\
+    E1    & 4     & 1     & 1 \\
+    E2    & 4     & 0     & 0 \\
+    E3    & 4     & 0     & 2 \\
+    F1    & 1     & 1     & 1 \\
+    F2    & 6     & 0     & 0 \\
+    F3    & 6     & 3     & 3 \\
+    G1    & 1     & 0     & 0 \\
+    G2    & 2     & 0     & 0 \\
+    G3    & 6     & 4     & 4 \\
+    H1    & 1     & 0     & 0 \\
+    H2    & 1     & 0     & 0 \\
+    H3    & 1     & 0     & 3 \\
+    I1    & 7     & 2     & 2 \\
+    I2    & 1     & 2     & 2 \\
+    I3    & 1     & 2     & 2 \\
+    J1    & 3     & 2     & 1 \\
+    J2    & 3     & 2     & 1 \\
+    J3    & 8     & 2     & 1 \\
+    K1    & 3     & 0     & 0 \\
+    K2    & 3     & 0     & 2 \\
+    K3    & 2     & 0     & 0 \\
+    L1    & 2     & 0     & 1 \\
+    L2    & 7     & 0     & 0 \\
+    L3    & 11    & 0     & 0 \\
+    L4    & 7     & 0     & 1 \\
+    L5    & 7     & 0     & 0 \\
+    L6    & 6     & 0     & 0 \\
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetI00.png} 
+% \caption[Metodologia I: evolução da autocorrelação nos conjuntos A, B e
+% C]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos A, B e C na
+% Metodologia I}
+% \label{Figura:autocorrelacaoABCMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetI01.png} 
+% \caption[Metodologia I: evolução da autocorrelação nos conjuntos D, E e
+% F]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos D, E e F na
+% Metodologia I}
+% \label{Figura:autocorrelacaoDEFMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetI02.png} 
+% \caption[Metodologia I: evolução da autocorrelação nos conjuntos G, H e
+% I]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos G, H e I na
+% Metodologia I}
+% \label{Figura:autocorrelacaoGHIMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetI03.png} 
+% \caption[Metodologia I: evolução da autocorrelação nos conjuntos J e
+% K]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos J e K na
+% Metodologia I}
+% \label{Figura:autocorrelacaoJK}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetI04.png} 
+% \caption[Metodologia I: evolução da autocorrelação nos conjuntos L]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos L na
+% Metodologia I}
+% \label{Figura:autocorrelacaoLMetI}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetI05.png} 
+% \caption[Metodologia I: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo da redução relativa total da
+% autocorrelação do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia I}
+% \label{Figura:tempocalculoPizzaMetI}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia I: dados estatísticos]{Média e variância do dado original
+comparadas às do resíduo calculado sem e com a utilização do modelo GARCH na
+Metodologia I} \label{tab:DadosEstatisticosMet1}\\
+\midrule
+    Conjunto & \specialcell{Média\\Original} &
+    \specialcell{Var.\\Original} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+    Conjunto & \specialcell{Média\\Orig.} &
+    \specialcell{Var.\\Orig.} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 3,0E+04 & 1,8E+07 & 0,5   & 2,9E+05 & -3,3  & 3,0E+05 \\
+    A2    & 3,2E+04 & 1,1E+07 & 0,5   & 2,3E+05 & -2,9  & 2,4E+05 \\
+    A3    & 3,1E+04 & 1,4E+07 & 0,5   & 2,5E+05 & -4,0  & 2,6E+05 \\
+    B1    & 2,8E+04 & 4,5E+05 & 0,6   & 1,2E+01 & 0,6   & 1,2E+01 \\
+    B2    & 2,8E+04 & 4,5E+05 & 0,6   & 1,2E+01 & 0,6   & 1,2E+01 \\
+    B3    & 2,8E+04 & 4,5E+05 & 0,6   & 1,2E+01 & 0,6   & 1,2E+01 \\
+    C1    & 3,3E+04 & 8,1E+07 & 0,5   & 1,8E+07 & -13,0 & 1,8E+07 \\
+    C2    & 3,3E+04 & 4,0E+07 & 0,5   & 1,2E+07 & 11,3  & 1,3E+07 \\
+    C3    & 3,3E+04 & 5,7E+07 & 0,5   & 1,1E+07 & -4,5  & 1,2E+07 \\
+    D1    & 3,7E+04 & 4,1E+07 & 0,4   & 4,9E+06 & -1,8  & 4,9E+06 \\
+    D2    & 3,3E+04 & 1,2E+07 & 0,5   & 1,9E+06 & -4,8  & 2,1E+06 \\
+    D3    & 3,1E+04 & 1,0E+07 & 0,3   & 1,6E+06 & -0,2  & 2,3E+06 \\
+    E1    & 2,9E+04 & 5,8E+07 & 0,3   & 1,4E+07 & -21,6 & 1,4E+07 \\
+    E2    & 3,0E+04 & 5,8E+07 & 0,1   & 1,4E+07 & 7,9   & 1,4E+07 \\
+    E3    & 3,0E+04 & 6,0E+07 & 0,4   & 1,5E+07 & -3,9  & 1,5E+07 \\
+    F1    & 3,8E+04 & 3,9E+07 & 0,6   & 2,1E+07 & 0,8   & 2,3E+07 \\
+    F2    & 2,3E+04 & 5,4E+06 & 0,6   & 1,6E+05 & 0,9   & 2,0E+05 \\
+    F3    & 2,6E+04 & 6,0E+06 & 0,4   & 5,4E+04 & -3,1  & 7,9E+04 \\
+    G1    & 3,3E+04 & 3,3E+07 & 0,5   & 1,5E+07 & 4,3   & 1,5E+07 \\
+    G2    & 3,8E+04 & 1,9E+07 & 0,5   & 1,3E+04 & 1,4   & 1,7E+04 \\
+    G3    & 2,9E+04 & 3,6E+07 & 0,5   & 5,3E+04 & -1,2  & 5,4E+04 \\
+    H1    & 3,1E+04 & 3,6E+07 & 0,4   & 3,5E+07 & 6,6   & 3,5E+07 \\
+    H2    & 3,4E+04 & 8,1E+06 & 0,5   & 3,5E+06 & 5,9   & 3,7E+06 \\
+    H3    & 3,2E+04 & 7,3E+06 & 0,5   & 4,6E+06 & 3,7   & 4,6E+06 \\
+    I1    & 3,6E+04 & 1,2E+07 & 0,7   & 5,8E+05 & 23,1  & 6,1E+05 \\
+    I2    & 2,9E+04 & 1,2E+06 & 0,8   & 4,8E+04 & 1,8   & 5,0E+04 \\
+    I3    & 3,1E+04 & 3,3E+07 & 0,3   & 2,1E+06 & -1,5  & 4,8E+06 \\
+    J1    & 3,7E+04 & 1,2E+06 & 0,5   & 1,4E+04 & 0,5   & 1,4E+04 \\
+    J2    & 3,5E+04 & 1,5E+06 & 0,5   & 1,9E+04 & 0,5   & 1,9E+04 \\
+    J3    & 3,3E+04 & 1,3E+06 & 0,5   & 1,5E+04 & 0,5   & 1,5E+04 \\
+    K1    & 3,9E+04 & 6,9E+06 & 0,5   & 5,4E+05 & 0,6   & 5,7E+05 \\
+    K2    & 4,0E+04 & 6,7E+06 & 0,5   & 5,2E+05 & 0,3   & 5,5E+05 \\
+    K3    & 3,6E+04 & 5,8E+06 & 0,5   & 5,3E+05 & 0,7   & 5,5E+05 \\
+    L1    & 3,4E+04 & 2,9E+07 & 0,4   & 2,0E+06 & -5,5  & 2,9E+06 \\
+    L2    & 3,1E+04 & 1,5E+07 & 0,0   & 4,2E+06 & 1,7   & 5,2E+06 \\
+    L3    & 3,5E+04 & 1,3E+07 & 0,5   & 4,7E+06 & -4,7  & 4,7E+06 \\
+    L4    & 3,7E+04 & 1,8E+07 & 0,4   & 2,6E+06 & 4,4   & 4,1E+06 \\
+    L5    & 3,1E+04 & 5,1E+07 & 0,3   & 9,7E+05 & -2,1  & 9,8E+05 \\
+    L6    & 3,2E+04 & 2,6E+07 & 0,6   & 1,0E+06 & -4,3  & 1,0E+06 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetI03.png} 
+% \caption[Metodologia I: Variância do conjunto A na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto A na Metodologia I}
+% \label{Figura:estatisticaAMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetI00.png} 
+% \caption[Metodologia I: Variância do conjunto B na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto B na Metodologia I}
+% \label{Figura:estatisticaBMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetI01.png} 
+% \caption[Metodologia I: Variância do conjunto C na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto C na Metodologia I}
+% \label{Figura:estatisticaCMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetI02.png} 
+% \caption[Metodologia I: Variância dos conjuntos D e E na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos D e E na Metodologia I}
+% \label{Figura:estatisticaDEMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetI04.png} 
+% \caption[Metodologia I: Variância do conjunto F na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto F na Metodologia I}
+% \label{Figura:estatisticaFMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetI05.png} 
+% \caption[Metodologia I: Variância dos conjuntos G, H e I na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos G, H e I na Metodologia I}
+% \label{Figura:estatisticaGHIMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetI06.png} 
+% \caption[Metodologia I: Variância dos conjuntos J e K na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos J e K na Metodologia I}
+% \label{Figura:estatisticaJKMetI}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetI07.png} 
+% \caption[Metodologia I: Variância do conjunto L na Metodologia I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto L na Metodologia I}
+% \label{Figura:estatisticaLMetI}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.65]{fig/res/estatisticasMetI08.png} 
+% \caption[Metodologia I: redução relativa da variância]{Gráfico com comparativo da redução relativa total da
+% variância do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia I}
+% \label{Figura:estatisticaPizzaMetI}
+% \end{figure}

@@ -1,0 +1,679 @@
+
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XIX: comparativo de convergência de soluções]{Comparativo
+   de quantidade de experimentos cujas soluções convergiram com e sem a
+   utilização do GARCH na metodologia XIX} \label{Tab:convergenciaMet19} \\
+\midrule
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+	Sem GARCH & 39 & 39 & 0 & 100\% \\
+	Com GARCH & 39 & 39 & 0 & 100\% \\
+\end{longtable}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XIX: Razão de compressão]{Razão de compressão dos
+experimentos sem e com GARCH na Metodologia XIX.
+Valores em bytes.} \label{Tab:razaocompressaoMet} \\
+\midrule
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    A1    & 1152000 & 938071 & 924975 & 1,23  & 1,25 \\
+    A2    & 1152000 & 885032 & 875013 & 1,30  & 1,32 \\
+    A3    & 1152000 & 922778 & 915800 & 1,25  & 1,26 \\
+    B1    & 518592 & 159456 & 197492 & 3,25  & 2,63 \\
+    B2    & 518592 & 159456 & 197492 & 3,25  & 2,63 \\
+    B3    & 518592 & 159456 & 197492 & 3,25  & 2,63 \\
+    C1    & 288192 & 279763 & 274233 & 1,03  & 1,05 \\
+    C2    & 288192 & 277364 & 269002 & 1,04  & 1,07 \\
+    C3    & 288192 & 281342 & 277921 & 1,02  & 1,04 \\
+    D1    & 331200 & 300169 & 299512 & 1,10  & 1,11 \\
+    D2    & 331200 & 282243 & 282579 & 1,17  & 1,17 \\
+    D3    & 331200 & 272175 & 268205 & 1,22  & 1,23 \\
+    E1    & 33792 & 34226 & 34289 & 0,99  & 0,99 \\
+    E2    & 33792 & 34385 & 34467 & 0,98  & 0,98 \\
+    E3    & 33792 & 34715 & 34730 & 0,97  & 0,97 \\
+    F1    & 220992 & 198188 & 198019 & 1,12  & 1,12 \\
+    F2    & 220992 & 143486 & 139419 & 1,54  & 1,59 \\
+    F3    & 220992 & 140607 & 136204 & 1,57  & 1,62 \\
+    G1    & 139392 & 125888 & 125915 & 1,11  & 1,11 \\
+    G2    & 139392 & 114785 & 114693 & 1,21  & 1,22 \\
+    G3    & 139392 & 127534 & 127543 & 1,09  & 1,09 \\
+    H1    & 360192 & 352483 & 352558 & 1,02  & 1,02 \\
+    H2    & 360192 & 316109 & 318045 & 1,14  & 1,13 \\
+    H3    & 360192 & 322100 & 321490 & 1,12  & 1,12 \\
+    I1    & 221184 & 185758 & 186214 & 1,19  & 1,19 \\
+    I2    & 221184 & 154053 & 144262 & 1,44  & 1,53 \\
+    I3    & 221184 & 196326 & 195367 & 1,13  & 1,13 \\
+    J1    & 591936 & 349603 & 339247 & 1,69  & 1,74 \\
+    J2    & 591936 & 363014 & 358589 & 1,63  & 1,65 \\
+    J3    & 591936 & 310391 & 340884 & 1,91  & 1,74 \\
+    K1    & 288000 & 219562 & 218068 & 1,31  & 1,32 \\
+    K2    & 288000 & 212108 & 208893 & 1,36  & 1,38 \\
+    K3    & 288000 & 218428 & 210403 & 1,32  & 1,37 \\
+    L1    & 480192 & 430980 & 427623 & 1,11  & 1,12 \\
+    L2    & 480192 & 438460 & 437112 & 1,10  & 1,10 \\
+    L3    & 480192 & 444677 & 443652 & 1,08  & 1,08 \\
+    L4    & 480192 & 413862 & 426293 & 1,16  & 1,13 \\
+    L5    & 480192 & 410788 & 405782 & 1,17  & 1,18 \\
+    L6    & 480192 & 408349 & 413364 & 1,18  & 1,16 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXIX00.png}
+% \caption[Metodologia XIX: razão de compressão dos conjuntos A, B e C]{Gráfico
+% com comparativo da razão de compressão dos conjuntos A, B e C sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:razaocompressaoABCMet19}
+% \end{figure}
+%  
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXIX01.png}
+% \caption[Metodologia XIX: razão de compressão dos conjuntos D, E e F]{Gráfico
+% com comparativo da razão de compressão dos conjuntos D, E e F sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:razaocompressaoDEFMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXIX02.png}
+% \caption[Metodologia XIX: razão de compressão dos conjuntos G, H e I]{Gráfico
+% com comparativo da razão de compressão dos conjuntos G, H e I sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:razaocompressaoGHIMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXIX03.png}
+% \caption[Metodologia XIX: razão de compressão dos conjuntos J, K e L]{Gráfico
+% com comparativo da razão de compressão dos conjuntos J, K e L sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:razaocompressaoJKLMet19}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.9]{fig/res/razaocompMetXIX04.png}
+% \caption[Metodologia XIX: razão de compressão]{Gráfico com comparativo da razão
+% de compressão na Metodologia XIX}
+% \label{Figura:razaocompressaoPizzaMet19}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XIX: evolução da entropia]{Evolução da entropia do dado
+original e do resíduo calculado na metodologia XIX}
+\label{tab:EvolucaoEntropiaMet19}\\
+\midrule
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 11,30 & 10,97 & 10,88 \\
+    A2    & 11,30 & 10,47 & 10,49 \\
+    A3    & 11,27 & 10,62 & 10,62 \\
+    B1    & 7,64  & 2,91  & 2,48 \\
+    B2    & 7,64  & 2,91  & 2,48 \\
+    B3    & 7,64  & 2,91  & 2,48 \\
+    C1    & 12,34 & 12,27 & 12,34 \\
+    C2    & 13,18 & 12,67 & 12,60 \\
+    C3    & 13,17 & 12,74 & 12,76 \\
+    D1    & 9,48  & 9,48  & 9,48 \\
+    D2    & 12,38 & 11,39 & 11,35 \\
+    D3    & 6,45  & 6,45  & 6,45 \\
+    E1    & 10,80 & 10,80 & 10,80 \\
+    E2    & 10,78 & 10,78 & 10,78 \\
+    E3    & 10,80 & 10,80 & 10,80 \\
+    F1    & 10,20 & 10,20 & 10,20 \\
+    F2    & 8,20  & 7,17  & 7,14 \\
+    F3    & 9,27  & 7,55  & 7,24 \\
+    G1    & 12,03 & 11,71 & 11,71 \\
+    G2    & 11,79 & 11,25 & 11,25 \\
+    G3    & 12,06 & 11,82 & 11,81 \\
+    H1    & 8,44  & 8,44  & 8,44 \\
+    H2    & 12,29 & 12,24 & 12,24 \\
+    H3    & 12,33 & 12,20 & 12,20 \\
+    I1    & 8,14  & 8,01  & 7,92 \\
+    I2    & 9,59  & 7,18  & 6,56 \\
+    I3    & 8,15  & 8,15  & 8,13 \\
+    J1    & 8,50  & 7,12  & 6,95 \\
+    J2    & 8,52  & 7,36  & 7,35 \\
+    J3    & 8,53  & 7,00  & 6,91 \\
+    K1    & 10,94 & 9,78  & 9,73 \\
+    K2    & 10,89 & 9,72  & 9,48 \\
+    K3    & 10,87 & 9,86  & 9,57 \\
+    L1    & 11,27 & 11,27 & 11,27 \\
+    L2    & 11,08 & 11,08 & 11,08 \\
+    L3    & 11,31 & 11,31 & 11,31 \\
+    L4    & 12,80 & 12,00 & 11,93 \\
+    L5    & 10,67 & 10,67 & 10,67 \\
+    L6    & 11,58 & 11,58 & 11,58 \\
+
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXIX00.png} 
+% \caption[Metodologia XIX: evolução da entropia nos conjuntos A, B e C]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos A, B e C sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:evolucaoentropiaABCMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXIX01.png} 
+% \caption[Metodologia XIX: evolução da entropia nos conjuntos D, E e F]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos D, E e F sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:evolucaoentropiaDEFMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXIX02.png} 
+% \caption[Metodologia XIX: evolução da entropia nos conjuntos G, H e I]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos G, H e I sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:evolucaoentropiaGHIMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetXIX03.png} 
+% \caption[Metodologia XIX: evolução da entropia nos conjuntos J e K]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos J e K sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:evolucaoentropiaJKMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetXIX04.png} 
+% \caption[Metodologia XIX: evolução da entropia nos conjuntos L]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos L sem e com GARCH na
+% Metodologia XIX}
+% \label{Figura:evolucaoentropiaLMet19}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1]{fig/res/evolucaoentropiaMetXIX05.png} 
+% \caption[Metodologia XIX: evolução da entropia]{Gráfico com comparativo da
+% evolução da entopia na Metodologia XIX}
+% \label{Figura:evolucaoentropiaPizzaMet19}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XIX: tempo de execução]{Tempo de execução (em segundos)
+dos algoritmos sem e com GARCH na Metodologia XIX. Primeiro é exibido o tempo de
+execução sem a utilização do modelo GARCH, depois com o modelo. Parâmetros
+modelo se refere ao tempo gasto pelo algoritmo para o cálculo dos parâmetros do
+modelo, Resíduo refere-se ao tempo gasto pelo modelo para calcular o resíduo do
+modelo, Cod. Arit. refere-se ao tempo gasto pela codificação aritmética para
+comprimir o resíduo.} \label{tab:EvolucaoEntropiaMet19}\\
+\midrule
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1&390&$<1$&2&393&828&1&2&831\\
+A2&510&1&8&519&944&1&2&946\\
+A3&517&$<1$&4&521&1.167&3&7&1.176\\
+B1&610&$<1$&1&611&886&$<1$&1&887\\
+B2&731&$<1$&1&732&1.493&1&1&1.495\\
+B3&727&1&2&731&1.475&2&2&1.479\\
+C1&53&1&3&57&129&$<1$&1&130\\
+C2&43&1&2&46&125&1&2&128\\
+C3&51&$<1$&1&52&119&1&2&122\\
+D1&52&$<1$&1&53&118&1&3&122\\
+D2&142&1&3&145&389&1&3&392\\
+D3&41&$<1$&2&43&384&$<1$&1&385\\
+E1&8&$<1$&$<1$&9&37&$<1$&$<1$&37\\
+E2&6&$<1$&$<1$&7&42&$<1$&$<1$&42\\
+E3&9&$<1$&$<1$&10&43&$<1$&$<1$&44\\
+F1&25&$<1$&2&28&87&$<1$&1&89\\
+F2&144&$<1$&$<1$&145&352&1&1&354\\
+F3&284&$<1$&$<1$&285&619&1&1&622\\
+G1&21&$<1$&2&23&89&1&1&91\\
+G2&63&$<1$&2&65&192&1&$<1$&193\\
+G3&23&$<1$&1&24&76&1&2&78\\
+H1&72&$<1$&1&73&242&1&4&246\\
+H2&42&1&2&45&224&$<1$&3&227\\
+H3&40&1&1&42&144&1&3&149\\
+I1&34&1&2&36&284&$<1$&1&286\\
+I2&87&$<1$&$<1$&87&331&1&1&332\\
+I3&16&$<1$&$<1$&17&43&$<1$&$<1$&44\\
+J1&706&$<1$&1&708&1.339&$<1$&1&1.340\\
+J2&420&$<1$&1&421&867&$<1$&1&869\\
+J3&1.623&1&3&1.627&2.609&1&1&2.610\\
+K1&248&1&2&251&566&1&2&569\\
+K2&626&$<1$&1&627&1.238&1&2&1.242\\
+K3&134&1&2&136&446&$<1$&$<1$&447\\
+L1&201&$<1$&4&204&144&1&5&150\\
+L2&80&1&1&82&197&2&4&202\\
+L3&61&1&5&67&188&$<1$&5&194\\
+L4&142&$<1$&1&143&286&1&3&291\\
+L5&394&1&3&398&879&$<1$&1&880\\
+L6&348&$<1$&1&350&354&$<1$&2&356\\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetXIX00.png} 
+% \caption[Metodologia XIX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos A, B, C e D]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos A, B, C e D sem e com GARCH na Metodologia
+% XIX}
+% \label{Figura:tempocalculoABCDMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXIX01.png} 
+% \caption[Metodologia XIX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos E, F e G]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos E, F e G sem e com GARCH na Metodologia
+% XIX}
+% \label{Figura:tempocalculoEFGMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXIX02.png} 
+% \caption[Metodologia XIX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos H, I e J]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos H, I e J sem e com GARCH na Metodologia
+% XIX}
+% \label{Figura:tempocalculoHIJMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering 
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetXIX03.png} 
+% \caption[Metodologia XIX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos K e L]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos K e L sem e com GARCH na Metodologia XIX}
+% \label{Figura:tempocalculoKLMet19}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXIX04.png} 
+% \caption[Metodologia XIX: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo do tempo total relativo de cálculo
+% dos parâmetros dos modelos sem e com GARCH na Metodologia XIX}
+% \label{Figura:tempocalculoPizzaMet19}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XIX: evolução da autocorrelação]{Autocorrelação do dado
+original e dos resíduos gerados sem e com a utilização do modelo GARCH na
+Metodologia XIX} \label{tab:EvolucaoAutocorrelacaoMet19}\\
+\midrule
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 6     & 0     & 0 \\
+A2    & 5     & 0     & 0 \\
+A3    & 6     & 0     & 0 \\
+B1    & 6     & 0     & 2 \\
+B2    & 6     & 0     & 2 \\
+B3    & 6     & 0     & 2 \\
+C1    & 2     & 0     & 0 \\
+C2    & 1     & 0     & 1 \\
+C3    & 2     & 0     & 0 \\
+D1    & 2     & 4     & 4 \\
+D2    & 2     & 3     & 0 \\
+D3    & 2     & 3     & 3 \\
+E1    & 4     & 0     & 0 \\
+E2    & 4     & 0     & 0 \\
+E3    & 4     & 0     & 0 \\
+F1    & 1     & 4     & 4 \\
+F2    & 6     & 0     & 2 \\
+F3    & 6     & 0     & 0 \\
+G1    & 1     & 1     & 1 \\
+G2    & 2     & 1     & 1 \\
+G3    & 6     & 1     & 1 \\
+H1    & 1     & 0     & 0 \\
+H2    & 1     & 0     & 1 \\
+H3    & 1     & 0     & 0 \\
+I1    & 7     & 0     & 1 \\
+I2    & 1     & 0     & 0 \\
+I3    & 1     & 1     & 1 \\
+J1    & 3     & 0     & 1 \\
+J2    & 3     & 2     & 0 \\
+J3    & 8     & 0     & 1 \\
+K1    & 3     & 0     & 1 \\
+K2    & 3     & 0     & 1 \\
+K3    & 2     & 0     & 1 \\
+L1    & 2     & 0     & 0 \\
+L2    & 7     & 0     & 2 \\
+L3    & 11    & 0     & 0 \\
+L4    & 7     & 0     & 1 \\
+L5    & 7     & 0     & 0 \\
+L6    & 6     & 0     & 4 \\
+
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetXIX00.png} 
+% \caption[Metodologia XIX: evolução da autocorrelação nos conjuntos A, B e
+% C]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos A, B e C na
+% Metodologia XIX}
+% \label{Figura:autocorrelacaoABCMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXIX01.png} 
+% \caption[Metodologia XIX: evolução da autocorrelação nos conjuntos D, E e
+% F]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos D, E e F na
+% Metodologia XIX}
+% \label{Figura:autocorrelacaoDEFMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXIX02.png} 
+% \caption[Metodologia XIX: evolução da autocorrelação nos conjuntos G, H e
+% I]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos G, H e I na
+% Metodologia XIX}
+% \label{Figura:autocorrelacaoGHIMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXIX03.png} 
+% \caption[Metodologia XIX: evolução da autocorrelação nos conjuntos J e
+% K]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos J e K na
+% Metodologia XIX}
+% \label{Figura:autocorrelacaoJKMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXIX04.png} 
+% \caption[Metodologia XIX: evolução da autocorrelação nos conjuntos L]{Gráfico
+% com comparativo da autocorrelação do resíduo gerado sem e com a utilização do modelo GARCH em relação ao dado original nos conjuntos L na
+% Metodologia XIX}
+% \label{Figura:autocorrelacaoLMet19}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetXIX05.png} 
+% \caption[Metodologia XIX: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo da redução relativa total da
+% autocorrelação do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia XIX}
+% \label{Figura:tempocalculoPizzaMet19}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XIX: dados estatísticos]{Média e variância do dado original
+comparadas às do resíduo calculado sem e com a utilização do modelo GARCH na
+Metodologia XIX} \label{tab:DadosEstatisticosMet19}\\
+\midrule
+    Conjunto & \specialcell{Média\\Original} &
+    \specialcell{Var.\\Original} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+    Conjunto & \specialcell{Média\\Orig.} &
+    \specialcell{Var.\\Orig.} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 3,0E+04 & 1,8E+07 & 93,7  & 3,0E+05 & 1,2   & 2,9E+05 \\
+A2    & 3,2E+04 & 1,1E+07 & 35,3  & 2,4E+05 & -1,3  & 2,9E+05 \\
+A3    & 3,1E+04 & 1,4E+07 & -0,8  & 2,5E+05 & 0,4   & 3,0E+05 \\
+B1    & 2,8E+04 & 4,5E+05 & 0,5   & 8,0E+00 & 0,4   & 4,5E+01 \\
+B2    & 2,8E+04 & 4,5E+05 & 0,5   & 8,0E+00 & 0,4   & 4,5E+01 \\
+B3    & 2,8E+04 & 4,5E+05 & 0,5   & 8,0E+00 & 0,4   & 4,5E+01 \\
+C1    & 3,3E+04 & 8,1E+07 & 0,3   & 2,0E+07 & 0,2   & 2,2E+07 \\
+C2    & 3,3E+04 & 4,0E+07 & 0,9   & 1,3E+07 & 2,8   & 1,7E+07 \\
+C3    & 3,3E+04 & 5,7E+07 & 0,6   & 1,1E+07 & 0,8   & 1,3E+07 \\
+D1    & 3,7E+04 & 4,1E+07 & 0,2   & 3,6E+06 & 0,7   & 3,6E+06 \\
+D2    & 3,3E+04 & 1,2E+07 & 0,6   & 1,8E+06 & 0,7   & 1,9E+06 \\
+D3    & 3,1E+04 & 1,0E+07 & -4,4  & 1,1E+06 & 5,9   & 1,5E+06 \\
+E1    & 2,9E+04 & 5,8E+07 & 0,6   & 5,1E+07 & -4,7  & 5,1E+07 \\
+E2    & 3,0E+04 & 5,8E+07 & 0,5   & 5,2E+07 & 0,6   & 5,3E+07 \\
+E3    & 3,0E+04 & 6,0E+07 & 0,9   & 5,5E+07 & 0,8   & 5,6E+07 \\
+F1    & 3,8E+04 & 3,9E+07 & 0,5   & 5,6E+06 & 0,4   & 5,6E+06 \\
+F2    & 2,3E+04 & 5,4E+06 & 1,7   & 2,2E+05 & 0,7   & 3,2E+05 \\
+F3    & 2,6E+04 & 6,0E+06 & -2,1  & 5,4E+04 & -1,9  & 7,3E+04 \\
+G1    & 3,3E+04 & 3,3E+07 & 2,9   & 2,6E+06 & 0,1   & 2,6E+06 \\
+G2    & 3,8E+04 & 1,9E+07 & 5,5   & 1,2E+06 & 2,6   & 1,3E+06 \\
+G3    & 2,9E+04 & 3,6E+07 & 3,5   & 2,7E+06 & 0,4   & 2,7E+06 \\
+H1    & 3,1E+04 & 3,6E+07 & -2,7  & 3,5E+07 & 38,2  & 3,5E+07 \\
+H2    & 3,4E+04 & 8,1E+06 & 0,3   & 5,9E+06 & -16,0 & 5,1E+06 \\
+H3    & 3,2E+04 & 7,3E+06 & 0,6   & 4,9E+06 & 0,1   & 5,1E+06 \\
+I1    & 3,6E+04 & 1,2E+07 & 0,7   & 1,3E+06 & 0,2   & 1,4E+06 \\
+I2    & 2,9E+04 & 1,2E+06 & 2,3   & 7,5E+04 & 0,1   & 1,4E+05 \\
+I3    & 3,1E+04 & 3,3E+07 & 0,3   & 6,9E+06 & 0,7   & 7,0E+06 \\
+J1    & 3,7E+04 & 1,2E+06 & 0,9   & 7,6E+03 & -1,3  & 8,8E+03 \\
+J2    & 3,5E+04 & 1,5E+06 & 3,2   & 3,2E+04 & -1,6  & 3,3E+04 \\
+J3    & 3,3E+04 & 1,3E+06 & 0,2   & 7,2E+03 & 1,1   & 8,2E+03 \\
+K1    & 3,9E+04 & 6,9E+06 & 17,8  & 2,1E+05 & 6,6   & 3,6E+05 \\
+K2    & 4,0E+04 & 6,7E+06 & 3,2   & 1,1E+05 & -2,1  & 1,1E+05 \\
+K3    & 3,6E+04 & 5,8E+06 & 0,2   & 2,3E+05 & 0,1   & 3,8E+05 \\
+L1    & 3,4E+04 & 2,9E+07 & -4,7  & 5,3E+06 & 0,4   & 5,2E+06 \\
+L2    & 3,1E+04 & 1,5E+07 & 0,7   & 5,2E+06 & 0,7   & 5,4E+06 \\
+L3    & 3,5E+04 & 1,3E+07 & -0,3  & 7,5E+06 & 1,8   & 7,6E+06 \\
+L4    & 3,7E+04 & 1,8E+07 & 2,2   & 2,9E+06 & 1,2   & 6,7E+06 \\
+L5    & 3,1E+04 & 5,1E+07 & -74,7 & 1,2E+06 & -2,7  & 1,2E+06 \\
+L6    & 3,2E+04 & 2,6E+07 & 42,2  & 9,8E+05 & 0,3   & 1,2E+06 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXIX03.png} 
+% \caption[Metodologia XIX: Variância do conjunto A]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto A na Metodologia XIX}
+% \label{Figura:estatisticaAMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXIX00.png} 
+% \caption[Metodologia XIX: Variância do conjunto B]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto B na Metodologia XIX}
+% \label{Figura:estatisticaBMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXIX01.png} 
+% \caption[Metodologia XIX: Variância do conjunto C]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto C na Metodologia XIX}
+% \label{Figura:estatisticaCMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXIX02.png} 
+% \caption[Metodologia XIX: Variância dos conjuntos D e E]{Gráfico com comparativo
+% da variância original do dado e dos resíduos gerados pelos modelos sem e com
+% GARCH dos conjuntos D e E na Metodologia XIX}
+% \label{Figura:estatisticaDEMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXIX04.png} 
+% \caption[Metodologia XIX: Variância do conjunto F]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto F na Metodologia XIX}
+% \label{Figura:estatisticaFMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXIX05.png} 
+% \caption[Metodologia XIX: Variância dos conjuntos G, H e I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos G, H e I na Metodologia XIX}
+% \label{Figura:estatisticaGHIMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXIX06.png} 
+% \caption[Metodologia XIX: Variância dos conjuntos J e K]{Gráfico
+% com comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos J e K na Metodologia XIX}
+% \label{Figura:estatisticaJKMet19}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXIX07.png} 
+% \caption[Metodologia XIX: Variância do conjunto L]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto L na Metodologia XIX}
+% \label{Figura:estatisticaLMet19}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.65]{fig/res/estatisticasMetXIX08.png} 
+% \caption[Metodologia XIX: redução relativa da variância]{Gráfico com comparativo
+% da redução relativa total da variância do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia XIX}
+% \label{Figura:estatisticaPizzaMet19}
+% \end{figure}

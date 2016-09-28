@@ -1,0 +1,479 @@
+\chapter{}
+\label{Cap:Descricaoconjuntodedados}
+
+\section{Conjunto A}
+
+O conjunto em questão é composto por um arquivo SEG-Y yr99jd85-0616z.segy, esse
+arquivo é distribuído com o exemplo do software aberto SIOSEIS, que pode ser
+encontrado no endereço web: \url{http://sioseis.ucsd.edu/avon.html}. O arquivo
+yr99jd85-0616z.segy foi gerado de dados coletados em 1999 e não possui
+informações sobre sua procedência e nem local da aquisição. O arquivo é composto
+por 730 traços com 6.000 amostras em cada traço, a frequência de amostragem é de
+1 milissegundo. Para poder testar o dado, foram separadas três amostras do
+mesmo, conjuntos A1, A2 e A3. O conjunto A1 possui os primeiros 40 traços do arquivo, o
+conjunto A2 possui os 40 traços do meio do arquivo e o conjunto A3 os 40 traços
+finais. Esses traços podem ser vistos na figura~\ref{Figura:a1a2a3}.
+
+Para se ter um melhor entendimento do conjunto de dados, na
+figura~\ref{Figura:a1a2a3comp} é possível ver os primeiros cinco traços de cada
+um dos conjuntos A1, A2 e A3.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.75]{fig/fig_A1.png}
+\caption{A1, A2 e A3}
+\label{Figura:a1a2a3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=0.75]{fig/fig_A2.png}
+  \caption{A1, A2 e A3 completos}
+  \label{Figura:a1a2a3comp}
+\end{figure}
+
+\section{Conjunto B}
+
+O conjunto B é composto pelo arquivo f11\_02673\_45Hz.segy e foi obtido na
+internet no exemplo da biblioteca segyMAT lib que é disponibilizada de modo
+livre. O arquivo é composto por 47 traços com 2701 amostras cada. Esse dado é um
+dado pré empilhamento sintético.  Os traços podem ser observados na figura
+abaixo. Para homogenizar os testes com compressão separamos os primeiros 40
+traços do arquivo e definimos com eles o conjunto B1.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1]{fig/fig_B1.png}
+\caption[Primeiros traços de B1, B2 e B3]{Cinco primeiros traços sísmicos
+formando os arquivos B1, B2 e B3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1]{fig/fig_B2.png}
+  \caption{Sismogramas B1, B2 e B3 completos}
+\end{figure}
+
+\pagebreak
+
+\section{Conjunto C}
+
+Este conjunto é composto pelo arquivo centralalaska1981LineA.segy. Esse estudo
+sísmico foi feito no norte do Alasca e um mapa da linha pode ser apreciado na
+figura~\ref{Figura:geograficamentefigc}. Note que a linha em questão na imagem
+é a linha A.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{fig/gps_img_c.png}
+\caption[Posição do conjunto C]{Posição do conjunto C. À direita a linha de
+referência é a linha A.}
+\label{Figura:geograficamentefigc}
+\end{figure}
+
+A aquisição foi realizada em 1981, nas coordenadas N 70$^o$ 4' 2'' / W 152$^o$
+46' 30''. Ela se encontra na National Petroleum Reserve, Alaska, (NPRA) e faz
+parte do  “Legacy Data Archive” of the U.S. Geological Survey (USGS). Mais informações
+sobre a aquisição podem ser encontrados em
+\url{https://opendtect.org/osr/pmwiki.php/Main/USGSCentralAlaska}.
+
+O arquivo centralalaska1981LineA.segy é composto por 1501 traços com 3282
+amostras cada. O intervalo de amostragem é de 2 ms. A figura abaixo mostra os
+1501 traços. Esse arquivo já foi processado após a aquisição. Os dados C1, C2 e
+C3 também são compostos pelos 40 primeiros, do meio e finais traços do
+sismograma.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{fig/over_img_c.png}
+\caption{Conjunto de dados C.}
+\label{Figura:conjuntodedadosc}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_C1.png}
+  \caption{Primeiros cinco traços dos conjuntos C1, C2 e C3}
+  \label{Figura:c1c2c3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_C2.png}
+\caption{C1, C2 e C3}
+\label{Figura:c1c2c3comp}
+\end{figure}
+
+\section{Conjunto D}
+
+Esse conjunto é composto pelo arquivo laurentian\_basin\_line\_05.sgy. Ele foi
+obtido no seguinte endereço
+\url{https://opendtect.org/osr/pmwiki.php/Main/LaurentianBasinCanada}. Esse
+arquivo é apenas uma das linhas geradas em um estudo sobre a Bacia Laurentiana
+que se encontra no Canadá, a localização aproximada é mostrada
+na~\ref{Figura:geograficamentefigd}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.75]{fig/gps_img_d.png}
+\caption[Posição do conjunto D]{Posição geográfica do conjunto D.}
+\label{Figura:geograficamentefigd}
+\end{figure}
+
+O arquivo laurentian\_basin\_line\_05.sgy é composto por 1725 traços com 17093
+amostras cada. O intervalo de amostragem é de 2 ms. A figura abaixo mostra os
+traços. Esse arquivo já é resultado de processamento e se trata de um dado pós
+stack migrado. Novamente serão analisados apenas porções do dado. Os conjuntos
+de dados D1, D2 e D3 foram definidos como sendo os 40 primeiros traços, os 40
+traços do meio do arquivo e os 40 traços finais. Esses conjuntos são exibidos
+nas figuras~\ref{Figura:d1d2d3} e~\ref{Figura:d1d2d3comp}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_D1.png}
+  \caption{Primeiros cinco traços dos conjuntos D1, D2 e D3}
+  \label{Figura:d1d2d3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_D2.png}
+\caption{D1, D2 e D3}
+\label{Figura:d1d2d3comp}
+\end{figure}
+
+\section{Conjunto E}
+
+Esse conjunto é composto pelo arquivo Netherlands.segy. Ele possui 56.726 traços
+com 176 amostras. Esse dado foi
+coletado em 1987 no atlântico próximo à Holanda. Mais informações sobre esse
+estudo se encontram no endereço
+\url{https://opendtect.org/osr/pmwiki.php/Main/NetherlandsOffshoreF3BlockComplete4GB}.
+A posição desse estudo é mostrada na figura~\ref{Figura:geograficamentefige}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.75]{fig/gps_img_e.png}
+\caption[Posição do conjunto E]{Posição geográfica do conjunto E.}
+\label{Figura:geograficamentefige}
+\end{figure}
+
+Novamente foram analisadas apenas porções do dado. Os conjuntos de
+dados E1, E2 e E3 foram definidos como sendo os 40 primeiros traços, os 40
+traços do meio do arquivo e os 40 traços finais. Esses conjuntos são exibidos
+nas figuras~\ref{Figura:e1e2e3} e~\ref{Figura:e1e2e3comp}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_E1.png}
+  \caption{Primeiros cinco traços dos conjuntos E1, E2 e E3}
+  \label{Figura:e1e2e3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_E2.png}
+\caption{Conjunto completo E1, E2 e E3}
+\label{Figura:e1e2e3comp}
+\end{figure}
+
+\section{Conjunto F}
+
+Esse conjunto foi fornecido no DVD da empresa EMC2 e é faz parte do conjunto 
+\emph{2007 BP Anisotropic Velocity-Analysis Benchmark dataset}. O conjunto é
+composto pelo arquivo FD\_Model\_PSTM\_STK.sgy. Esse arquivo
+é o resultado de uma modelagem sísmica composta por 1.151 traços com 12.596
+amostras. Novamente serão analisadas apenas
+porções do dado. Os conjuntos de dados F1, F2 e F3 foram definidos como sendo os
+40 primeiros traços, os 40 traços do  meio do arquivo e os 40 traços finais.
+Esses conjuntos são exibidos nas figuras~\ref{Figura:f1f2f3}
+e~\ref{Figura:f1f2f3comp}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_F1.png}
+  \caption{Primeiros cinco traços dos conjuntos F1, F2 e F3}
+  \label{Figura:f1f2f3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_F2.png}
+\caption{Conjunto F1, F2 e F3}
+\label{Figura:f1f2f3comp}
+\end{figure}
+
+
+\section{Conjunto G}
+
+Esse conjunto está gravado no arquivo~\emph{mimage.mat}, que é o formato do
+MATLAB. Ele possui 240 traços de 736 amostras cada, esse dado é resultado de uma
+simulação sobre o modelo Marmousi, comumente utilizado para testes de
+processamento de dados sísmicos. Para analisar o conjunto, este foi separado em
+três subconjuntos, G1, correspondendo aos primeiros 40 traços; G2,
+correspondendo aos 40 traços do meio do arquivo e G3, correspondendo aos 40
+traços do final do arquivo. Os primeiros cinco traços de cada conjunto pode ser
+visto em~\ref{Figura:g1g2g3}. O quarenta traços podem ser vistos
+em~\ref{Figura:g1g2g3comp}. O conjunto inteiro pode ser visto na
+figura~\ref{Figura:conjuntodedadosg}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_G1.png}
+  \caption{Primeiros cinco traços dos conjuntos G1, G2 e G3}
+  \label{Figura:g1g2g3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_G2.png}
+\caption{Conjunto G1, G2 e G3}
+\label{Figura:g1g2g3comp}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1]{fig/over_img_g.png}
+\caption{Conjunto de dados G.}
+\label{Figura:conjuntodedadosg}
+\end{figure}
+
+\section{Conjunto H}
+
+Esse conjunto está gravado no arquivo 843\_m.sgy. Ele possui 5.000 com 1.876
+amostras cada.  Para analisar o conjunto, este foi separado em
+três subconjuntos, H1, correspondendo aos primeiros 40 traços; H2,
+correspondendo aos 40 traços do meio do arquivo e H3, correspondendo aos 40
+traços do final do arquivo. Os primeiros cinco traços de cada conjunto pode ser
+visto em~\ref{Figura:h1h2h3}. O quarenta traços podem ser vistos
+em~\ref{Figura:h1h2h3comp}. O conjunto inteiro pode ser visto na
+figura~\ref{Figura:conjuntodedadosh}. A posição geográfica da aquisição sísmica
+pode ser vista na figura~\ref{Figura:geograficamentefigh}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_H1.png}
+  \caption{Primeiros cinco traços dos conjuntos H1, H2 e H3}
+  \label{Figura:h1h2h3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_H2.png}
+\caption{Conjunto H1, H2 e H3}
+\label{Figura:h1h2h3comp}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1]{fig/over_img_h.png}
+\caption{Conjunto de dados H.}
+\label{Figura:conjuntodedadosh}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.75]{fig/gps_img_h.png}
+\caption[Posição do conjunto H]{Posição geográfica do conjunto H.}
+\label{Figura:geograficamentefigh}
+\end{figure}
+
+\section{Conjunto I}
+
+Esse conjunto está no arquivo 7m\_shots\_0201\_0329.segy. O arquivo é sintético
+e mais informaçoes estão disponiveis no endereço
+\url{http://software.seg.org/datasets/2D/Statics_1994}. Para analizar os dados
+os agrupamos em três subconjuntos, I1, correspondendo aos primeiros 40 traços;
+I2, correspondendo aos 40 traços do meio do arquivo e I3, correspondendo aos 40
+traços do final do arquivo. Os primeiros cinco traços de cada conjunto pode ser
+visto em~\ref{Figura:i1i2i3}. O quarenta traços podem ser vistos
+em~\ref{Figura:i1i2i3comp}. O conjunto inteiro pode ser visto na
+figura~\ref{Figura:conjuntodedadosi}. A posição geográfica da aquisição sísmica
+pode ser vista na figura~\ref{Figura:geograficamentefigj}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_I1.png}
+  \caption{Primeiros cinco traços dos conjuntos I1, I2 e I3}
+  \label{Figura:i1i2i3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_I2.png}
+\caption{Conjunto I1, I2 e I3}
+\label{Figura:i1i2i3comp}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1]{fig/over_img_i.png}
+\caption{Conjunto de dados I.}
+\label{Figura:conjuntodedadosi}
+\end{figure}
+
+\section{Conjunto J}
+
+Esse conjunto está gravado no arquivo U18\_05.SGY, que contém 12.017 traços com
+3.083 amostras cada. Se trata de um dado real, não sintético. Mais informações
+podem ser encontradas no endereço
+\url{http://woodshole.er.usgs.gov/operations/ia/public_ds_info.php?fa=1978-015-FA}.
+Para ler esse arquivo, foram obtidos os 250 traços correspondentes aos
+tiros 10, 20 e 30, que foram agrupados nos conjuntos J1, J2 e J3
+respectivamente. Os primeiros cinco traços de cada conjunto pode ser
+visto em~\ref{Figura:j1j2j3}. O quarenta traços podem ser vistos
+em~\ref{Figura:j1j2j3comp}. O conjunto inteiro pode ser visto na
+figura~\ref{Figura:conjuntodedadosj}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_J1.png}
+  \caption{Primeiros cinco traços dos conjuntos J1, J2 e J3}
+  \label{Figura:j1j2j3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_J2.png}
+\caption{Conjunto J1, J2 e J3}
+\label{Figura:j1j2j3comp}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1]{fig/over_img_j.png}
+\caption{Conjunto de dados J.}
+\label{Figura:conjuntodedadosj}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.75]{fig/gps_img_j.png}
+\caption[Posição do conjunto J]{Posição geográfica do conjunto J.}
+\label{Figura:geograficamentefigj}
+\end{figure}
+
+\section{Conjunto K}
+
+Esse conjunto está gravado no arquivo seismic.segy, que contém 2.000 traços com
+1.500 amostras cada. Se trata de um dado real, não sintético. Mais informações
+podem ser encontradas no endereço
+\url{http://s3.amazonaws.com/open.source.geoscience/open_data/Mobil_Avo_Viking_Graben_Line_12/mobil_avo.html}.
+Esse arquivo é fornecido como parte do livro \emph{Comparison of Seismic
+Inversion Methods on a Single Real Data Set}. Para analizar o arquivo,
+carregamos os traços do tiro 3, 8 e 18 respectivamente nos conjuntos K1, K2 e
+K3.  Os primeiros cinco traços de cada conjunto pode ser
+visto em~\ref{Figura:k1k2k3}. O quarenta traços podem ser vistos
+em~\ref{Figura:k1k2k3comp}. O conjunto inteiro pode ser visto na
+figura~\ref{Figura:conjuntodedadosk}.
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[scale=1.01]{fig/fig_K1.png}
+  \caption{Primeiros cinco traços dos conjuntos K1, K2 e K3}
+  \label{Figura:k1k2k3}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.01]{fig/fig_K2.png}
+\caption{Conjunto K1, K2 e K3}
+\label{Figura:k1k2k3comp}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1]{fig/over_img_k.png}
+\caption{Conjunto de dados K.}
+\label{Figura:conjuntodedadosk}
+\end{figure}
+
+\section{Conjunto L}
+
+Esse conjunto que contém 3.477.329 traços com 2.500 amostras cada. Se trata de
+um dado real. Os traços estão agrupados por cojuntos de comom shot, ou seja
+conjuntos de seismogramas. Em geral os sismogramas contém 420 traços cada mas
+existem sismogramas com menos traços. No total o arquivo tem 8.346 sismogramas.
+Para analizar o arquivo, carregamos os traços dos tiros 1.148, 3.279, 4.337,
+6.417, 7.473, 8.507 respectivamente nos conjuntos L1, L2, L3, L4, L5, L6.
+
+\chapter{}
+\section{Metodologia I}
+\input{chapters/metodologias/Metodologia01.tex}
+\clearpage
+
+\section{Metodologia II}
+\input{chapters/metodologias/Metodologia02.tex}
+\clearpage
+
+\section{Metodologia III}
+\input{chapters/metodologias/Metodologia03.tex} 
+\clearpage
+
+\section{Metodologia IV}
+\input{chapters/metodologias/Metodologia04.tex}
+\clearpage
+
+\section{Metodologia V}
+\input{chapters/metodologias/Metodologia05.tex}
+\clearpage
+
+\section{Metodologia VI}
+\input{chapters/metodologias/Metodologia06.tex}
+\clearpage
+
+\section{Metodologia VII}
+\input{chapters/metodologias/Metodologia07.tex}
+\clearpage
+
+\section{Metodologia VIII}
+\input{chapters/metodologias/Metodologia08.tex}
+\clearpage
+
+\section{Metodologia IX}
+\input{chapters/metodologias/Metodologia09.tex}
+\clearpage
+
+\section{Metodologia X}
+\input{chapters/metodologias/Metodologia10.tex}
+\clearpage
+
+\section{Metodologia XI}
+\input{chapters/metodologias/Metodologia11.tex}
+\clearpage
+
+\section{Metodologia XII}
+\input{chapters/metodologias/Metodologia12.tex}
+\clearpage
+
+\section{Metodologia XIII}
+\input{chapters/metodologias/Metodologia13.tex}
+\clearpage
+
+\section{Metodologia XIV}
+\input{chapters/metodologias/Metodologia14.tex}
+\clearpage
+
+\section{Metodologia XV}
+\input{chapters/metodologias/Metodologia15.tex}
+\clearpage
+
+\section{Metodologia XVI}
+\input{chapters/metodologias/Metodologia16.tex}
+\clearpage
+
+\section{Metodologia XVII}
+\input{chapters/metodologias/Metodologia17.tex}
+\clearpage
+
+\section{Metodologia XVIII}
+\input{chapters/metodologias/Metodologia18.tex}
+\clearpage
+
+\section{Metodologia XIX}
+\input{chapters/metodologias/Metodologia19.tex}
+\clearpage
+
+\section{Metodologia XX}
+\input{chapters/metodologias/Metodologia20.tex}

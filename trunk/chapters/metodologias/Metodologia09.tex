@@ -1,0 +1,679 @@
+
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia IX: comparativo de convergência de soluções]{Comparativo
+   de quantidade de experimentos cujas soluções convergiram com e sem a
+   utilização do GARCH na metodologia IX} \label{Tab:convergenciaMet9} \\
+\midrule
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+	Sem GARCH & 39 & 35 & 4 & 89,74\% \\
+	Com GARCH & 39 & 39 & 0 & 100\% \\
+\end{longtable}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia IX: Razão de compressão]{Razão de compressão dos
+experimentos sem e com GARCH na Metodologia IX.
+Valores em bytes.} \label{Tab:razaocompressaoMet} \\
+\midrule
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    A1    & 1152000 & 938376 & 938415 & 1,23  & 1,23 \\
+    A2    & 1152000 & 883827 & 881969 & 1,30  & 1,31 \\
+    A3    & 1152000 & 922699 & 921917 & 1,25  & 1,25 \\
+    B1    & 518592 & 416785 & 359811 & 1,24  & 1,44 \\
+    B2    & 518592 & 416785 & 359811 & 1,24  & 1,44 \\
+    B3    & 518592 & 416785 & 359811 & 1,24  & 1,44 \\
+    C1    & 288192 & 284486 & 279660 & 1,01  & 1,03 \\
+    C2    & 288192 & 264810 & 276418 & 1,09  & 1,04 \\
+    C3    & 288192 & 270173 & 267788 & 1,07  & 1,08 \\
+    D1    & 331200 & 285775 & 285150 & 1,16  & 1,16 \\
+    D2    & 331200 & 288461 & 287033 & 1,15  & 1,15 \\
+    D3    & 331200 & 274958 & 296311 & 1,20  & 1,12 \\
+    E1    & 33792 & 34088 & 34109 & 0,99  & 0,99 \\
+    E2    & 33792 & 34313 & 34355 & 0,98  & 0,98 \\
+    E3    & 33792 & 34545 & 34581 & 0,98  & 0,98 \\
+    F1    & 220992 & 198568 & 196573 & 1,11  & 1,12 \\
+    F2    & 220992 & 143069 & 150317 & 1,54  & 1,47 \\
+    F3    & 220992 & 142087 & 136207 & 1,56  & 1,62 \\
+    G1    & 139392 & 125570 & 125466 & 1,11  & 1,11 \\
+    G2    & 139392 & 122726 & 122759 & 1,14  & 1,14 \\
+    G3    & 139392 & 126657 & 126683 & 1,10  & 1,10 \\
+    H1    & 360192 & 352686 & 352957 & 1,02  & 1,02 \\
+    H2    & 360192 & 319181 & 320060 & 1,13  & 1,13 \\
+    H3    & 360192 & 326621 & 325192 & 1,10  & 1,11 \\
+    I1    & 221184 & 190275 & 188120 & 1,16  & 1,18 \\
+    I2    & 221184 & 137745 & 147473 & 1,61  & 1,50 \\
+    I3    & 221184 & 194911 & 195371 & 1,13  & 1,13 \\
+    J1    & 591936 & 344775 & 322895 & 1,72  & 1,83 \\
+    J2    & 591936 & 492544 & 397465 & 1,20  & 1,49 \\
+    J3    & 591936 & 347630 & 332892 & 1,70  & 1,78 \\
+    K1    & 288000 & 218086 & 198226 & 1,32  & 1,45 \\
+    K2    & 288000 & 212366 & 212565 & 1,36  & 1,35 \\
+    K3    & 288000 & 217685 & 213300 & 1,32  & 1,35 \\
+    L1    & 480192 & 438372 & 435036 & 1,10  & 1,10 \\
+    L2    & 480192 & 416583 & 437850 & 1,15  & 1,10 \\
+    L3    & 480192 & 455718 & 452967 & 1,05  & 1,06 \\
+    L4    & 480192 & 416649 & 428649 & 1,15  & 1,12 \\
+    L5    & 480192 & 428025 & 411507 & 1,12  & 1,17 \\
+    L6    & 480192 & 407775 & 405816 & 1,18  & 1,18 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetIX00.png}
+% \caption[Metodologia IX: razão de compressão dos conjuntos A, B e C]{Gráfico
+% com comparativo da razão de compressão dos conjuntos A, B e C sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:razaocompressaoABCMet9}
+% \end{figure}
+%  
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetIX01.png}
+% \caption[Metodologia IX: razão de compressão dos conjuntos D, E e F]{Gráfico
+% com comparativo da razão de compressão dos conjuntos D, E e F sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:razaocompressaoDEFMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetIX02.png}
+% \caption[Metodologia IX: razão de compressão dos conjuntos G, H e I]{Gráfico
+% com comparativo da razão de compressão dos conjuntos G, H e I sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:razaocompressaoGHIMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetIX03.png}
+% \caption[Metodologia IX: razão de compressão dos conjuntos J, K e L]{Gráfico
+% com comparativo da razão de compressão dos conjuntos J, K e L sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:razaocompressaoJKLMet9}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.9]{fig/res/razaocompMetIX04.png}
+% \caption[Metodologia IX: razão de compressão]{Gráfico com comparativo da razão
+% de compressão na Metodologia IX}
+% \label{Figura:razaocompressaoPizzaMet9}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia IX: evolução da entropia]{Evolução da entropia do dado
+original e do resíduo calculado na metodologia IX}
+\label{tab:EvolucaoEntropiaMet9}\\
+\midrule
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 11,30 & 10,94 & 10,94 \\
+    A2    & 11,30 & 10,47 & 10,45 \\
+    A3    & 11,27 & 10,62 & 10,61 \\
+    B1    & 7,64  & 7,64  & 6,83 \\
+    B2    & 7,64  & 7,64  & 6,83 \\
+    B3    & 7,64  & 7,64  & 6,83 \\
+    C1    & 12,34 & 12,34 & 12,34 \\
+    C2    & 13,18 & 12,65 & 12,60 \\
+    C3    & 13,17 & 12,77 & 12,77 \\
+    D1    & 9,48  & 9,48  & 9,48 \\
+    D2    & 12,38 & 11,66 & 11,56 \\
+    D3    & 6,45  & 6,45  & 6,45 \\
+    E1    & 10,80 & 10,80 & 10,80 \\
+    E2    & 10,78 & 10,78 & 10,78 \\
+    E3    & 10,80 & 10,80 & 10,80 \\
+    F1    & 10,20 & 10,20 & 10,20 \\
+    F2    & 8,20  & 7,13  & 7,30 \\
+    F3    & 9,27  & 7,80  & 7,30 \\
+    G1    & 12,03 & 11,96 & 11,91 \\
+    G2    & 11,79 & 11,47 & 11,47 \\
+    G3    & 12,06 & 12,01 & 12,01 \\
+    H1    & 8,44  & 8,44  & 8,44 \\
+    H2    & 12,29 & 12,10 & 12,09 \\
+    H3    & 12,33 & 12,07 & 12,05 \\
+    I1    & 8,14  & 8,14  & 8,00 \\
+    I2    & 9,59  & 7,21  & 6,46 \\
+    I3    & 8,15  & 8,15  & 8,13 \\
+    J1    & 8,50  & 6,59  & 6,55 \\
+    J2    & 8,52  & 8,52  & 6,36 \\
+    J3    & 8,53  & 6,87  & 6,65 \\
+    K1    & 10,94 & 9,75  & 9,58 \\
+    K2    & 10,89 & 9,70  & 9,71 \\
+    K3    & 10,87 & 9,70  & 9,59 \\
+    L1    & 11,27 & 11,27 & 11,27 \\
+    L2    & 11,08 & 11,08 & 11,08 \\
+    L3    & 11,31 & 11,31 & 11,31 \\
+    L4    & 12,80 & 12,34 & 11,97 \\
+    L5    & 10,67 & 10,67 & 10,67 \\
+    L6    & 11,58 & 11,58 & 11,58 \\
+
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetIX00.png} 
+% \caption[Metodologia IX: evolução da entropia nos conjuntos A, B e C]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos A, B e C sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:evolucaoentropiaABCMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetIX01.png} 
+% \caption[Metodologia IX: evolução da entropia nos conjuntos D, E e F]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos D, E e F sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:evolucaoentropiaDEFMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetIX02.png} 
+% \caption[Metodologia IX: evolução da entropia nos conjuntos G, H e I]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos G, H e I sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:evolucaoentropiaGHIMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetIX03.png} 
+% \caption[Metodologia IX: evolução da entropia nos conjuntos J e K]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos J e K sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:evolucaoentropiaJKMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetIX04.png} 
+% \caption[Metodologia IX: evolução da entropia nos conjuntos L]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos L sem e com GARCH na
+% Metodologia IX}
+% \label{Figura:evolucaoentropiaLMet9}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1]{fig/res/evolucaoentropiaMetIX05.png} 
+% \caption[Metodologia IX: evolução da entropia]{Gráfico com comparativo da
+% evolução da entopia na Metodologia IX}
+% \label{Figura:evolucaoentropiaPizzaMet9}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia IX: tempo de execução]{Tempo de execução (em segundos)
+dos algoritmos sem e com GARCH na Metodologia IX. Primeiro é exibido o tempo de
+execução sem a utilização do modelo GARCH, depois com o modelo. Parâmetros
+modelo se refere ao tempo gasto pelo algoritmo para o cálculo dos parâmetros do
+modelo, Resíduo refere-se ao tempo gasto pelo modelo para calcular o resíduo do
+modelo, Cod. Arit. refere-se ao tempo gasto pela codificação aritmética para
+comprimir o resíduo.} \label{tab:EvolucaoEntropiaMet9}\\
+\midrule
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1&327&$<1$&3&330&702&1&3&706\\
+A2&104&$<1$&2&107&370&1&2&373\\
+A3&430&1&5&435&1.055&1&2&1.058\\
+B1&100&$<1$&2&102&1.630&$<1$&1&1.631\\
+B2&105&$<1$&3&108&1.318&1&1&1.320\\
+B3&98&$<1$&1&99&1.238&$<1$&1&1.239\\
+C1&101&1&5&107&545&1&5&550\\
+C2&35&1&3&39&251&$<1$&1&252\\
+C3&39&1&3&43&132&1&3&136\\
+D1&43&$<1$&1&45&288&1&1&290\\
+D2&91&$<1$&1&93&261&1&3&265\\
+D3&209&1&2&212&496&1&3&500\\
+E1&16&$<1$&1&17&85&$<1$&1&86\\
+E2&16&$<1$&$<1$&16&83&$<1$&1&85\\
+E3&5&$<1$&$<1$&5&34&$<1$&$<1$&34\\
+F1&49&1&3&53&223&$<1$&1&224\\
+F2&97&$<1$&1&97&297&1&1&298\\
+F3&90&$<1$&1&91&250&$<1$&1&251\\
+G1&56&1&2&58&158&$<1$&1&159\\
+G2&48&1&2&51&292&1&2&295\\
+G3&59&$<1$&1&60&328&$<1$&2&330\\
+H1&50&$<1$&1&51&102&$<1$&1&104\\
+H2&56&1&2&59&170&$<1$&2&173\\
+H3&108&1&4&113&186&1&2&189\\
+I1&64&$<1$&1&64&201&$<1$&1&202\\
+I2&226&1&1&227&550&1&1&551\\
+I3&31&$<1$&1&31&72&$<1$&1&72\\
+J1&431&$<1$&1&432&702&2&2&706\\
+J2&455&2&2&459&1.611&1&1&1.613\\
+J3&1.104&2&1&1.106&2.078&1&2&2.081\\
+K1&116&$<1$&1&117&398&$<1$&1&399\\
+K2&479&$<1$&1&480&850&$<1$&1&851\\
+K3&153&1&3&156&379&1&2&382\\
+L1&71&$<1$&3&74&386&1&4&391\\
+L2&58&$<1$&3&61&347&1&1&349\\
+L3&56&$<1$&2&58&294&$<1$&2&297\\
+L4&257&$<1$&2&259&606&2&1&609\\
+L5&138&$<1$&2&141&1.265&2&7&1.274\\
+L6&197&1&8&206&661&2&7&670\\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetIX00.png} 
+% \caption[Metodologia IX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos A, B, C e D]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos A, B, C e D sem e com GARCH na Metodologia
+% IX}
+% \label{Figura:tempocalculoABCDMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetIX01.png} 
+% \caption[Metodologia IX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos E, F e G]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos E, F e G sem e com GARCH na Metodologia
+% IX}
+% \label{Figura:tempocalculoEFGMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetIX02.png} 
+% \caption[Metodologia IX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos H, I e J]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos H, I e J sem e com GARCH na Metodologia
+% IX}
+% \label{Figura:tempocalculoHIJMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering 
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetIX03.png} 
+% \caption[Metodologia IX: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos K e L]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos K e L sem e com GARCH na Metodologia IX}
+% \label{Figura:tempocalculoKLMet9}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetIX04.png} 
+% \caption[Metodologia IX: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo do tempo total relativo de cálculo
+% dos parâmetros dos modelos sem e com GARCH na Metodologia IX}
+% \label{Figura:tempocalculoPizzaMet9}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia IX: evolução da autocorrelação]{Autocorrelação do dado
+original e dos resíduos gerados sem e com a utilização do modelo GARCH na
+Metodologia IX} \label{tab:EvolucaoAutocorrelacaoMet9}\\
+\midrule
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 6     & 0     & 0 \\
+    A2    & 5     & 0     & 0 \\
+    A3    & 6     & 0     & 0 \\
+    B1    & 6     & 6     & 5 \\
+    B2    & 6     & 6     & 5 \\
+    B3    & 6     & 6     & 5 \\
+    C1    & 2     & 1     & 0 \\
+    C2    & 1     & 0     & 0 \\
+    C3    & 2     & 1     & 0 \\
+    D1    & 2     & 1     & 1 \\
+    D2    & 2     & 1     & 4 \\
+    D3    & 2     & 3     & 1 \\
+    E1    & 4     & 0     & 0 \\
+    E2    & 4     & 0     & 0 \\
+    E3    & 4     & 0     & 0 \\
+    F1    & 1     & 1     & 1 \\
+    F2    & 6     & 0     & 4 \\
+    F3    & 6     & 0     & 0 \\
+    G1    & 1     & 1     & 1 \\
+    G2    & 2     & 1     & 1 \\
+    G3    & 6     & 1     & 1 \\
+    H1    & 1     & 0     & 0 \\
+    H2    & 1     & 0     & 0 \\
+    H3    & 1     & 0     & 0 \\
+    I1    & 7     & 1     & 1 \\
+    I2    & 1     & 0     & 0 \\
+    I3    & 1     & 1     & 1 \\
+    J1    & 3     & 1     & 1 \\
+    J2    & 3     & 3     & 7 \\
+    J3    & 8     & 1     & 2 \\
+    K1    & 3     & 0     & 0 \\
+    K2    & 3     & 0     & 0 \\
+    K3    & 2     & 0     & 1 \\
+    L1    & 2     & 1     & 5 \\
+    L2    & 7     & 0     & 2 \\
+    L3    & 11    & 0     & 1 \\
+    L4    & 7     & 0     & 2 \\
+    L5    & 7     & 6     & 0 \\
+    L6    & 6     & 0     & 0 \\
+
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetIX00.png} 
+% \caption[Metodologia IX: evolução da autocorrelação nos conjuntos A, B e
+% C]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos A, B e C na
+% Metodologia IX}
+% \label{Figura:autocorrelacaoABCMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetIX01.png} 
+% \caption[Metodologia IX: evolução da autocorrelação nos conjuntos D, E e
+% F]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos D, E e F na
+% Metodologia IX}
+% \label{Figura:autocorrelacaoDEFMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetIX02.png} 
+% \caption[Metodologia IX: evolução da autocorrelação nos conjuntos G, H e
+% I]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos G, H e I na
+% Metodologia IX}
+% \label{Figura:autocorrelacaoGHIMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetIX03.png} 
+% \caption[Metodologia IX: evolução da autocorrelação nos conjuntos J e
+% K]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos J e K na
+% Metodologia IX}
+% \label{Figura:autocorrelacaoJKMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetIX04.png} 
+% \caption[Metodologia IX: evolução da autocorrelação nos conjuntos L]{Gráfico
+% com comparativo da autocorrelação do resíduo gerado sem e com a utilização do modelo GARCH em relação ao dado original nos conjuntos L na
+% Metodologia IX}
+% \label{Figura:autocorrelacaoLMet9}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetIX05.png} 
+% \caption[Metodologia IX: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo da redução relativa total da
+% autocorrelação do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia IX}
+% \label{Figura:tempocalculoPizzaMet9}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia IX: dados estatísticos]{Média e variância do dado original
+comparadas às do resíduo calculado sem e com a utilização do modelo GARCH na
+Metodologia IX} \label{tab:DadosEstatisticosMet9}\\
+\midrule
+    Conjunto & \specialcell{Média\\Original} &
+    \specialcell{Var.\\Original} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+    Conjunto & \specialcell{Média\\Orig.} &
+    \specialcell{Var.\\Orig.} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 3,0E+04 & 1,8E+07 & 0,5   & 2,9E+05 & 0,5   & 2,9E+05 \\
+A2    & 3,2E+04 & 1,1E+07 & 0,6   & 2,4E+05 & -2,6  & 2,4E+05 \\
+A3    & 3,1E+04 & 1,4E+07 & 0,5   & 2,5E+05 & -3,1  & 2,6E+05 \\
+B1    & 2,8E+04 & 4,5E+05 & 27.649,7 & 4,5E+05 & 5,1   & 9,8E+04 \\
+B2    & 2,8E+04 & 4,5E+05 & 27.649,7 & 4,5E+05 & 5,1   & 9,8E+04 \\
+B3    & 2,8E+04 & 4,5E+05 & 27.649,7 & 4,5E+05 & 5,1   & 9,8E+04 \\
+C1    & 3,3E+04 & 8,1E+07 & 0,5   & 1,7E+07 & -18,7 & 1,8E+07 \\
+C2    & 3,3E+04 & 4,0E+07 & 0,5   & 1,1E+07 & 2,9   & 1,2E+07 \\
+C3    & 3,3E+04 & 5,7E+07 & 0,5   & 1,0E+07 & -26,4 & 1,0E+07 \\
+D1    & 3,7E+04 & 4,1E+07 & 0,4   & 4,8E+06 & 1,8   & 5,2E+06 \\
+D2    & 3,3E+04 & 1,2E+07 & 0,5   & 1,8E+06 & -1,5  & 1,9E+06 \\
+D3    & 3,1E+04 & 1,0E+07 & 0,5   & 1,3E+06 & 5,2   & 5,5E+06 \\
+E1    & 2,9E+04 & 5,8E+07 & -5,2  & 2,8E+07 & -23,6 & 2,8E+07 \\
+E2    & 3,0E+04 & 5,8E+07 & -5,3  & 2,9E+07 & -17,1 & 2,9E+07 \\
+E3    & 3,0E+04 & 6,0E+07 & -7,5  & 3,0E+07 & -52,8 & 3,0E+07 \\
+F1    & 3,8E+04 & 3,9E+07 & 0,5   & 6,9E+06 & 13,6  & 7,6E+06 \\
+F2    & 2,3E+04 & 5,4E+06 & 0,6   & 1,8E+05 & 0,1   & 3,4E+05 \\
+F3    & 2,6E+04 & 6,0E+06 & 0,0   & 5,2E+04 & 0,5   & 6,7E+04 \\
+G1    & 3,3E+04 & 3,3E+07 & 0,8   & 4,5E+06 & -6,1  & 5,0E+06 \\
+G2    & 3,8E+04 & 1,9E+07 & 1,1   & 2,1E+06 & -10,4 & 2,1E+06 \\
+G3    & 2,9E+04 & 3,6E+07 & 0,8   & 4,4E+06 & -95,1 & 4,6E+06 \\
+H1    & 3,1E+04 & 3,6E+07 & 1,2   & 3,5E+07 & 15,1  & 3,5E+07 \\
+H2    & 3,4E+04 & 8,1E+06 & 0,5   & 4,3E+06 & -9,0  & 4,4E+06 \\
+H3    & 3,2E+04 & 7,3E+06 & 0,5   & 3,5E+06 & 8,9   & 3,5E+06 \\
+I1    & 3,6E+04 & 1,2E+07 & 0,7   & 1,6E+06 & 8,6   & 1,9E+06 \\
+I2    & 2,9E+04 & 1,2E+06 & -0,5  & 5,5E+04 & 0,1   & 8,7E+04 \\
+I3    & 3,1E+04 & 3,3E+07 & 0,3   & 6,9E+06 & 1,9   & 7,2E+06 \\
+J1    & 3,7E+04 & 1,2E+06 & -12,2 & 9,4E+03 & -3,0  & 9,2E+03 \\
+J2    & 3,5E+04 & 1,5E+06 & 3,5E+04 & 1,5E+06 & 0,8   & 8,7E+04 \\
+J3    & 3,3E+04 & 1,3E+06 & -1,3  & 8,2E+03 & 0,0   & 8,1E+03 \\
+K1    & 3,9E+04 & 6,9E+06 & -0,8  & 1,9E+05 & 15,6  & 1,8E+05 \\
+K2    & 4,0E+04 & 6,7E+06 & 2,2   & 1,2E+05 & 7,6   & 1,2E+05 \\
+K3    & 3,6E+04 & 5,8E+06 & 2,3   & 2,0E+05 & 0,6   & 2,6E+05 \\
+L1    & 3,4E+04 & 2,9E+07 & 2,1   & 4,9E+06 & -9,8  & 5,2E+06 \\
+L2    & 3,1E+04 & 1,5E+07 & -5,2  & 4,2E+06 & 0,5   & 4,7E+06 \\
+L3    & 3,5E+04 & 1,3E+07 & 5,5   & 7,6E+06 & 52,2  & 7,6E+06 \\
+L4    & 3,7E+04 & 1,8E+07 & 0,2   & 4,6E+06 & 26,5  & 6,4E+06 \\
+L5    & 3,1E+04 & 5,1E+07 & -275,2 & 2,9E+06 & 0,3   & 1,1E+06 \\
+L6    & 3,2E+04 & 2,6E+07 & 0,5   & 9,2E+05 & -5,1  & 9,4E+05 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetIX03.png} 
+% \caption[Metodologia IX: Variância do conjunto A]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto A na Metodologia IX}
+% \label{Figura:estatisticaAMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetIX00.png} 
+% \caption[Metodologia IX: Variância do conjunto B]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto B na Metodologia IX}
+% \label{Figura:estatisticaBMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetIX01.png} 
+% \caption[Metodologia IX: Variância do conjunto C]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto C na Metodologia IX}
+% \label{Figura:estatisticaCMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetIX02.png} 
+% \caption[Metodologia IX: Variância dos conjuntos D e E]{Gráfico com comparativo
+% da variância original do dado e dos resíduos gerados pelos modelos sem e com
+% GARCH dos conjuntos D e E na Metodologia IX}
+% \label{Figura:estatisticaDEMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetIX04.png} 
+% \caption[Metodologia IX: Variância do conjunto F]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto F na Metodologia IX}
+% \label{Figura:estatisticaFMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetIX05.png} 
+% \caption[Metodologia IX: Variância dos conjuntos G, H e I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos G, H e I na Metodologia IX}
+% \label{Figura:estatisticaGHIMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetIX06.png} 
+% \caption[Metodologia IX: Variância dos conjuntos J e K]{Gráfico
+% com comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos J e K na Metodologia IX}
+% \label{Figura:estatisticaJKMet9}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetIX07.png} 
+% \caption[Metodologia IX: Variância do conjunto L]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto L na Metodologia IX}
+% \label{Figura:estatisticaLMet9}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.65]{fig/res/estatisticasMetIX08.png} 
+% \caption[Metodologia IX: redução relativa da variância]{Gráfico com comparativo
+% da redução relativa total da variância do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia IX}
+% \label{Figura:estatisticaPizzaMet9}
+% \end{figure}

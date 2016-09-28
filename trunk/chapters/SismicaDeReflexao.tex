@@ -1,0 +1,129 @@
+\chapter{A Geofísica e o Método Sísmico}
+\label{Capitulo:sismicadereflexao}
+
+A~\emph{Geofísica} trata do estudo do planeta Terra através de
+métodos físicos. Mais especificamente, o termo é comumente utilizado para
+denotar a física aplicada ao estudo do planeta, excetuando-se a hidrosfera e a
+atmosfera. Uma das subáreas em que a geofísica pode ser particionada é a
+Geofísica de Exploração que se preocupa com a aplicação de técnicas de
+geofísica aos problemas de exploração de gás/petróleo, água e alguns
+minerais~\citep{Livro:telford1990}.
+
+A Terra é formada pela crosta, manto e núcleo~\citep{Livro:crostamantonucleo1,
+Livro:crostamantonucleo2}. A crosta terrestre é formada por um conjunto de
+camadas que foram se depositando uma sobre a outra ao longo das diversas eras
+geológicas. Cada uma dessas
+camadas é denominada~\emph{subsuperfície}, a área de contato entre duas
+subsuperfícies é chamada de~\emph{interface}.
+
+Para que um geofísico possa determinar a possibilidade de se encontrar petróleo,
+ou qualquer outro tipo de mineral, em uma dada região, é necessário que ele
+disponha de um mapa das subsuperfícies. Esse mapa é uma espécie de radiografia
+do subsolo~\citep{Livro:racionalenergia} daquela localidade. Existem diversos
+métodos de prospecção de subsuperfícies, os quais são chamados de~\emph{métodos
+geofísicos}.
+
+Cada uma das subsuperfícies é formada por materiais diferentes; argila, areia,
+sal, rocha etc. e, por isso, possui características físicas distintas;
+resistividade elétrica, permeabilidade magnética, densidade, dentre outras.
+Essas características são utilizadas pelos métodos
+geofísicos para criar o mapa de subsuperfícies da região. Dentre os
+métodos geofísicos existentes, destacam-se os~\emph{métodos sísmicos}, que se
+utilizam de~\emph{ondas sísmicas}. Uma onda sísmica é uma perturbação mecânica
+do meio que se propaga sem deslocamento de material, apenas de energia. Como
+qualquer onda, suas principais características são frequência, comprimento de
+onda, amplitude e fase~\citep{Dissertacao:puc2}.
+
+O método sísmico é o mais utilizado atualmente~\citep{Livro:matlab,
+Livro:yilmaz_vol_i} para fins de prospecção de petróleo. Ele compreende três
+estágios, a aquisição, o processamento e a interpretação dos
+dados~\citep{Livro:yilmaz_vol_i}. Neste trabalho, o processamento e a
+interpretação dos dados não serão contemplados. A aquisição de dados para o
+método sísmico pode ocorrer de forma marítima ou
+terrestre~\citep{Livro:yilmaz_vol_i}. As duas abordagens são parecidas, sendo
+a principal diferença os aparelhos utilizados, mas convergentes em relação à
+metodologia.
+
+O método sísmico necessita de ondas sísmicas que são gerados por um componente
+chamado~\emph{fonte}. Um~\emph{tiro} é uma perturbação mecânica gerada
+artificialmente pela fonte. Durante uma aquisição, vários tiros são efetuados,
+em geral com intervalos de tempo ou distâncias constantes. As ondas formadas
+pelos tiros viajam pelas subsuperfícies do terreno e, eventualmente, voltam para
+a superfície (esse fenômeno será abordado mais adiante). As ondas que regressam
+são coletadas por~\emph{geofones}, componentes que captam a energia mecânica no
+solo e a transformam em energia elétrica. A distância entre a fonte e um geofone
+é chamada de~\emph{offset}.
+
+As ondas geradas pela fonte penetram a crosta terrestre, atravessando diferentes
+subsuperfícies. Essas subsuperfícies apresentam características acústicas
+distintas e, por isso, as ondas sofrem diversos fenômenos físicos. Para a
+geofísica um dos fenômenos mais importantes é a~\emph{reflexão}. Parte da
+energia contida em uma onda será refletida na interface entre duas camadas
+geológicas e o restante seguirá seu caminho dentre as diversas subsuperfícies
+existentes.
+
+Esse processo continuará até que a onda perca sua energia. A energia da onda que
+é refletida será captada por um geofone. Este mede a variação de
+pressão na superfície em um~\emph{traço sísmico}. Um traço sísmico representa,
+portanto, a variação da pressão em um geofone gravada em função do
+tempo~\citep{Livro:matlab}. Um conjunto de traços sísmicos é chamado
+de~\emph{sismograma}. Para cada tiro dado na fase de aquisição é gerado um
+sismograma. Uma vez que os dados sísmicos foram obtidos, estes são transportados
+em fitas magnéticas, ou HDs, até o centro de
+processamento~\citep{Livro:yilmaz_vol_i}. Um formato de arquivo pré-definido
+chamado SEG-Y é tipicamente utilizado. 
+
+\section{O Formato SEG-Y}
+\label{subsec:segy}
+
+O SEG-Y é um dos diversos formatos de arquivos existentes para o armazenamento
+de dados sísmicos~\citep{Manual:segy}, sendo este o formato requisitado pela
+Agência Nacional do Petróleo para que cópias de aquisições de dados sísmicos em
+solo brasileiro lhe sejam enviadas~\citep{Manual:anp}.
+
+O SEG-Y utiliza o formato EBCDIC (\emph{Extended Binary Coded Digital
+Interchange Character}), proposto pela IBM e relativamente bem utilizado quando
+o padrão SEG-Y foi desenvolvido. Apesar do EBCDIC ter sido amplamente
+substituído pelo padrão ASCII (\emph{American Standard Code for Information
+Interchange}), o SEG-Y ainda o utiliza por razões de compatibilidade.
+
+O SEG-Y possui um cabeçalho de~\emph{exatamente} 3.200 bytes a ser preenchido
+com o formato EBCDIC. Isso significa que mesmo que nenhuma informação
+seja posta nesse cabeçalho é necessário que 3.200 bytes do arquivo sejam
+alocados. Cada arquivo SEG-Y possui um cabeçalho com informações sobre a
+aquisição, como o seu local, a distância entre dois tiros consecutivos etc.
+Informações nesse cabeçalho são escritas em 40 linhas de 80 caracteres cada uma.
+Como no formato EBCDIC cada caractere ocupa 8 bits (1 byte), tem-se $80 \times
+40 \times 1 = 3.200$ bytes~\citep{Manual:segy}.
+
+O próximo campo do arquivo SEG-Y é um cabeçalho binário de~\emph{exatamente} 400
+bytes preenchidos com inteiros de 2 bytes ($200$ inteiros $\times~2$) ou de 4
+bytes ($100$ inteiros $\times~4$). Há apenas um cabeçalho binário por arquivo
+SEG-Y e ele contém dados referentes à disposição dos geofones, sistema de
+medição de distâncias (metros, pés etc.), formato dos dados do arquivo (ponto
+flutuante de 32 bits, inteiro de 16 ou 32 bits etc) dentre outras informações.
+Seu preenchimento não é obrigatório, embora seja extremamente
+recomendável~\citep{Manual:segy}.
+
+Em seguida, um número opcional de cabeçalhos chamados de~\emph{Extended Textual
+File Header} de tamanhos fixos de 3.200 bytes são apresentados. O objetivo de
+tais cabeçalhos é proporcionar um espaço adicional para informações necessárias
+sobre o arquivo SEG-Y de maneira flexível, mas bem estruturada. O tipo de
+informação aqui registrada inclui dados sobre navegação, registro de atividades
+não corriqueiras (condições adversas do clima, por exemplo), parâmetros de
+aquisição etc.~\citep{Manual:segy}. O número de cabeçalhos depende da quantidade
+de informação que se deseja reportar.
+
+A partir de então, sempre será alternado um campo cabeçalho do
+traço~(\emph{Trace Header}), de 240 bytes e os dados do traço~(\emph{Trace
+Data}), de tamanho variável. Há exatamente um cabeçalho para cada~\emph{trace
+data}. O cabeçalho possui atributos relacionados aos traços, utilizando inteiros
+de dois ou quatro bytes. Algumas das informações que pode conter um cabeçalho
+são identificação do tiro que gerou o traço, código de identificação do traço,
+elevação do terreno em que o traço foi registrado, latitude e longitude do
+posicionamento do geofone, data e hora da aquisição do traço, dentre outros.
+
+Os campos~\emph{trace data} contém os valores obtidos pelos geofones no decorrer
+da aquisição. Esses dados são armazenados em sequência, utilizando
+números~\emph{float}. A representação~\emph{IBM single precision floating point
+format} é a mais utilizada para este fim~\citep{tp:bitmask}.

@@ -1,0 +1,57 @@
+\chapter{Introdução}
+\pagenumbering{arabic} 
+
+A compressão de dados sísmicos vem sendo estudada há
+decadas~\citep{Artigo:bordley1983}. Tal duração pode ser explicada pela grande
+quantidade de dados gerados durante uma aquisição sísmica, pela necessidade de
+replicação deles e pela geração de novos conjuntos de dados depois do
+processamento dos dados coletados.
+
+Muitos trabalhos utilizam modelos de predição linear como uma
+transformada matemática em dados sísmicos para facilitar a sua
+compressão~\citep{Artigo:bordley1983, Artigo:linearmelhor, Artigo:lpemaistres,
+Artigo:nenhumamudanca}.
+Dados sísmicos, entretanto, não são lineares. Além disso, dados sísmicos são
+heteroscedásticos, ou seja, sua variância não pode ser considerada constante ao
+longo do tempo. Embora tenhamos descoberto trabalhos que utilizam, com sucesso,
+modelos não lineares para comprimir dados
+sísmicos~\citep{Artigo:naolinearestat}, não fomos capazes de encontrar um que
+lide com sua heteroscedasticidade. Neste trabalho, propomos estudar o modelo de
+predição ARIMA-GARCH a fim de obtermos um conjunto de resíduos mais propícios
+para compressão.
+
+Nossa hipótese é que um modelo capaz de explorar a heteroscedasticidade do dado
+sísmico apresente um conjunto de resíduos mais decorrelacionados, facilitando a
+compressão dele.
+
+O modelo ARIMA-GARCH será aplicado no esquema de compressão em duas
+etapas~\citep{Artigo:stearnsincompleto}, onde a primeira tem por objetivo
+reduzir a entropia do dado. A entropia é um limite teórico e representa a média
+mínima de bits necessária para representar uma informação sem perdas. A segunda
+etapa comprime o dado efetivamente.
+
+Visualizando um dado sísmico como uma série temporal, é possível calcular os
+coeficientes de um modelo ARIMA-GARCH. O resíduo dá-se pela diferença entre o
+valor calculado pelo modelo e o valor real do dado. É possível provar
+matematicamente que o conjunto de resíduos gerado é
+decorrelacionado~\citep{Livro:analiseseriestemporais}, abrindo caminho para um
+resultado de compressão melhor. De posse dos coeficientes calculados e do
+conjunto de resíduos, o decodificador pode, sem perdas, regerar o dado original.
+
+Neste trabalho, comparando a solução proposta com um modelo de
+predição linear, verificou-se que o modelo proposto foi capaz de melhorar a
+razão de compressão na maioria dos testes rodados, demorou mais tempo para
+executar também na maioria dos testes, não foi capaz de reduzir a autocorrelação
+e a variância tão bem como o modelo de predição linear, mas foi superior na
+redução da entropia do resíduo gerado.
+
+O trabalho encontra-se organizado da seguinte forma: no
+Capítulo~\ref{Capitulo:sismicadereflexao} é explicado como dados sísmicos são
+coletados e apresenta algumas nomenclaturas. O
+Capítulo~\ref{chap:compressaodados} introduz os principais conceitos sobre
+compressão de dados. O Capítulo~\ref{Capitulo:analisedeseriestemporais}
+apresenta o modelo ARIMA-GARCH, bem como alguns conceitos sobre séries
+temporais. O Capítulo~\ref{Capitulo:propostatrabalho} formaliza o estudo feito
+nesse trabalho. O Capítulo~\ref{Capitulo:testes} apresenta
+metodologias e resultados de testes e, finalmente, o
+Capítulo~\ref{Cap:conclusao} apresenta a conclusão desse trabalho.

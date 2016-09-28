@@ -1,0 +1,25 @@
+\chapter{Conclusão} 
+\label{Cap:conclusao}
+
+Este trabalho apresentou uma nova proposta de compressão de dados sísmicos,
+valendo-se da característica heteroscedásticas de tais dados. O modelo
+estatístico ARIMA-GARCH foi usado na primeira parte de compressão com o objetivo
+de reduzir a variância do dado original, descorrelacioná-lo e reduzir sua
+entropia.
+
+Comparando-se com modelos de predição linear já utilizados atualmente, o método
+proposto foi capaz de reduzir a entropia do dado original na maioria dos testes.
+Contudo, não conseguiu descorrelacioná-lo. Isso fez com que a razão de
+compressão obtida não fosse satisfatória como se imaginava, embora tenha sido
+superior na maioria dos testes rodados.
+
+Vinte metodologias de testes foram rodadas. Percebeu-se que a utilização do
+modelo ARMA torna-se suficiente, já que dados sísmicos são estacionários. Além
+disso, é sempre necessário estimar os parâmetros do modelo. Estimar parâmetros
+fixos para evitar o seu envio ao decodificador não trouxe um bom conjunto de
+resíduo.
+
+Ao se analisar o dado com relação à natureza, esperava-se que dados pós-stack
+tivessem resultados superiores a pré-stack. Isso porque dados pós-stack possuem
+menos ruído. Isso não ocorreu, dados pré e pós-stack apresentaram resultado
+estatisticamente similares.

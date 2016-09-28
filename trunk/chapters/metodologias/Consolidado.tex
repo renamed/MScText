@@ -1,0 +1,650 @@
+\subsection{Razão de compressão}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{fig/res/consolidado_rc.png}
+\caption[Razão de compressão consolidada]{Consolidação da razão de compressão envolvendo todas as metodologias}
+\label{Figura:ConsolidadoRC}
+\end{figure}
+ 
+
+ A tabela~\ref{Tabela:RazaoCompressaoPrePosStack} sumariza os resultados obtidos pelo tipo de arquivo testado. Em dados pré-stack, o GARCH conseguiu uma razão de
+ compressão melhor em $48\%$ dos testes, empatou em $4\%$ e foi inferior também em $48\%$. Nesse caso, a utilização ou não do GARCH, olhando as razões de compressão globais para pré-stack foi indiferente. Para dados pós-stack, o GARCH foi melhor em $46\%$, pior em $47\%$ e indiferente em $7\%$ dos testes. Dados cujas características são desconhecidas (marcados como~\emph{Não Disponível} na tabela~\ref{Tabela:RazaoCompressaoPrePosStack}) representam $53\%$, $2\%$ e $45\%$ de ganho, empate e perda, respectivamente.
+ 
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption{Compilado da razão de compressão entre dados pré e pós-stack}
+\label{Tabela:RazaoCompressaoPrePosStack} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível & 53\%  & 2\%   & 45\% \\
+    Pós-stack & 46\%  & 7\%   & 47\% \\
+    Pré-stack & 48\%  & 4\%   & 48\% \\
+\end{longtable}
+\end{center}
+
+ Já a tabela~\ref{Tabela:RazaoCompressaoMigradoNaoMigrado} compila os resultados de dados migrados e não migrados. Nos dados migrados, metade dos testes foi melhor sem a utilização do GARCH, em $7\%$ houve empate e no restante a utilização do GARCH foi mais vantajosa. Para dados não migrados, uma inversão ocorre, metade dos testes foi 
+ favorável ao GARCH, em $4\%$ a utilização ou não do GARCH foi indiferente e em $46\%$ dos testes em dados não migrados, o GARCH não apresentou uma solução melhor. Em dados onde a informação de migração não foi encontrada, a utilização do GARCH foi favorável em $53\%$ dos testes, irrelevante em $2\%$ e desfavorável nos $45\%$ restantes.
+ 
+ 
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da razão de compressão entre dados migrados e não migrados}
+ \label{Tabela:RazaoCompressaoMigradoNaoMigrado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível & 53\%  & 2\%   & 45\% \\
+    Não Migrado & 50\%  & 4\%   & 46\% \\
+    Migrado & 43\%  & 7\%   & 50\% \\
+\end{longtable}
+\end{center}
+ 
+ 
+Na tabela~\ref{Tabela:RazaoCompressaoRuidoEstimado}, são mostrados os resultados de acordo com o ruído estimado no dado. Em dados com ruído estimado em alto, a utilização do GARCH só foi superior em $29\%$ dos testes, em $9\%$ houve empate e inferior em $61\%$ dos testes. Em dados com ruído estimado em baixo, o GARCH foi superior em $51\%$ dos testes, em $2\%$ houve empate e nos $47\%$ restantes foi inferior. Em dados com ruído estimado em médio, o GARCH foi superior em $53\%$ dos casos de teste, empatou em $5\%$ e perdeu em $42\%$ dos testes. Esses resultados mostram que o GARCH conseguiu gerar conjuntos de resíduos mais propícios para a compressão do que os modelos AR, ARMA e ARIMA puramente para arquivos com ruído baixo ou médio.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da razão de compressão entre dados com relação ao ruído
+ estimado do dado}\label{Tabela:RazaoCompressaoRuidoEstimado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Alto & 29\%  & 9\%   & 61\% \\
+	Baixo & 51\%  & 2\%   & 47\% \\
+	Médio & 53\%  & 5\%   & 42\% \\
+\end{longtable}
+\end{center}
+
+ 
+A tabela~\ref{Tabela:RazaoCompressaoSinteticoOuNaoSintetico} mostra a diferença
+de desempenho das soluções sem e com GARCH em dados sintéticos. Para dados
+sintéticos, o GARCH alcançou uma razão de compressão melhor em $47\%$ das vezes,
+empatou em $3\%$ e foi superado em $50\%$ dos testes. Já para dados não
+sintéticos, esses valores mudam para $49\%$, $5\%$ e $46\%$, respectivamente.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da razão de compressão entre dados sintéticos e
+ não-sintéticos} \label{Tabela:RazaoCompressaoSinteticoOuNaoSintetico} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Sintético & 49\%  & 5\%   & 46\% \\
+    Sintético & 47\%  & 3\%   & 50\% \\
+\end{longtable}
+\end{center}
+
+\subsection{Evolução Entropia}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{fig/res/consolidado_ent.png}
+\caption[Redução de entropia consolidada]{Consolidação da evolução da entropia
+envolvendo todas as metodologias. Em $53\%$ dos testes, a utilização do GARCH
+trouxe um resíduo com entropia menos elevada do que a não utilização do modelo.}
+\label{Figura:ConsolidadoEE}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.9]{fig/res/consolidado_reducaoent.png}
+\caption[Métrica de redução de entropia consolidada]{Medição da evolução da
+entropia total envolvendo todas as metodologias.}
+\label{Figura:ConsolidadoEEMetrica}
+\end{figure}
+
+A tabela~\ref{Tabela:EvolucaoEntropiaPrePosStack} apresenta a evolução da
+entropia de dados pré e pós-stack levando em consideração todas as
+metodologias de teste. Em dados pré-stack, a utilização do GARCH foi positiva em
+$56\%$ dos testes, inferior em $20\%$ e irrelevante em quase um quarto
+dos testes. Para dados pós-stack, houve vantagem utilizando o GARCH em $37\%$
+dos testes e desvantagem em $26\%$; nos $37\%$ restantes a utilização do modelo
+foi irrelevante. Para dados sem informação disponível, o uso do
+GARCH apresentou ganhos em $63\%$, em $30\%$ houve piora na evolução da
+entropia do resíduo em relação ao dado original e, com $7\%$ dos testes, não
+houve diferença na utilização do modelo com GARCH.
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption{Compilado da evolução da entropia entre dados pré e pós-stack}
+\label{Tabela:EvolucaoEntropiaPrePosStack} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível & 30\%  & 7\%   & 63\% \\
+    Pós-stack & 26\%  & 37\%  & 37\% \\
+    Pré-stack & 20\%  & 24\%  & 56\% \\
+\end{longtable}
+\end{center}
+
+Já a tabela~\ref{Tabela:EvolucaoEntropiaMigradoNaoMigrado} compila os resultados
+da evolução da entropia de dados migrados e não migrados. Em dados migrados,
+$42\%$ dos testes apresentaram melhor desempenho com GARCH, $35\%$ não
+apresentaram diferença e nos $23\%$ restantes a utilização do GARCH trouxe um
+conjunto de resíduos com entropa superior a do dado original. Em dados não
+migrados, mais da metade dos testes com a utilização do GARCH obteve um
+conjunto de resíduos com entropia inferior, em $23\%$ houve empate e nos $21\%$
+restantes a não utilização do modelo GARCH trouxe resíduos com entropia
+superior. Para dados sem a informação de migrado ou não disponível, os índices
+de ganho, empate e perda na utilização do GARCH foram, respectivamente, 63\%,
+7\% e 30\%.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da entropia entre dados migrados e não
+ migrados} \label{Tabela:EvolucaoEntropiaMigradoNaoMigrado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível   & 30\%  & 7\%   & 63\% \\
+    Não Migrado & 21\%  & 23\%  & 56\% \\
+    Migrado & 23\%  & 35\%  & 42\% \\
+\end{longtable}
+\end{center}
+
+Na tabela~\ref{Tabela:EvolucaoEntropiaRuidoEstimado}, são mostrados os
+resultados da evolução da entropia de acordo com o ruído estimado no dado. Em
+dados com ruído estimado em alto, o GARCH foi inferior em $14\%$ dos testes,
+houve empate em $55\%$ e ganho sem GARCH em $31\%$ dos testes realizados. Em
+dados com ruído estimado em baixo, o GARCH foi superior em $55\%$ dos testes,
+irrelevante em $31\%$ e perdeu nos $14\%$ restantes. Para dados com ruído
+estimado em médio, a utilização do GARCH foi melhor em $59\%$ dos testes,
+empatou em $9\%$ e foi vencida nos $32\%$ que sobram.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da entropia entre dados com relação ao ruído
+ estimado do dado}\label{Tabela:EvolucaoEntropiaRuidoEstimado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Alto  & 14\%  & 55\%  & 31\% \\
+    Baixo & 14\%  & 31\%  & 55\% \\
+    Médio & 32\%  & 9\%   & 59\% \\
+\end{longtable}
+\end{center}
+
+A tabela~\ref{Tabela:EvolucaoEntropiaSinteticoOuNaoSintetico} mostra a
+diferença de desempenho das soluções sem e com GARCH em dados sintéticos. Para dados
+sintéticos, o GARCH alcançou uma entropia melhor em $61\%$ das vezes,
+empatou em $9\%$ e foi superado em $30\%$ dos testes. Já para dados não
+sintéticos, esses valores mudam para $49\%$, $33\%$ e $19\%$, respectivamente.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da entropia entre dados sintéticos e
+ não-sintéticos} \label{Tabela:EvolucaoEntropiaSinteticoOuNaoSintetico} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor sem\\GARCH} &
+   Empate & \specialcell{Melhor com\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Sintético & 19\%  & 33\%  & 49\% \\
+    Sintético & 30\%  & 9\%   & 61\% \\
+\end{longtable}
+\end{center}
+
+ \subsection{Evolução da Correlação}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{fig/res/consolidado_correlacao.png}
+\caption[Razão de compressão consolidada]{Consolidação da razão de compressão envolvendo todas as metodologias}
+\label{Figura:ConsolidadoRC}
+\end{figure}
+
+A tabela~\ref{Tabela:EvolucaoCorrelacaoPrePosStack} apresenta a evolução da
+correlação de dados pré e pós-stack levando em consideração todas as
+metodologias de teste. Em dados pré-stack, a utilização do GARCH foi positiva em
+$6\%$ dos testes, inferior em $28\%$ e irrelevante em dois terços dos testes.
+Para dados pós-stack, houve vantagem utilizando o GARCH em $9\%$ dos testes e
+desvantagem em $20\%$; nos $71\%$ restantes a utilização do modelo foi
+irrelevante. Para dados sem informação disponível, não houve testes em que o
+GARCH tenha apresentado algum ganho, em $7\%$ houve piora na evolução da
+correlação do resíduo em relação ao dado original e, com $93\%$ dos testes, não
+houve diferença na utilização do modelo com GARCH.
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption{Compilado da evolução da correlação entre dados pré e pós-stack}
+\label{Tabela:EvolucaoCorrelacaoPrePosStack} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível & 0\%   & 93\%  & 7\% \\
+    Pós-stack & 9\%   & 71\%  & 20\% \\
+    Pré-stack & 6\%   & 66\%  & 28\%
+\end{longtable}
+\end{center}
+
+Já a tabela~\ref{Tabela:EvolucaoCorrelacaoMigradoNaoMigrado} compila os resultados de dados migrados e não
+migrados. Em dados migrados, $43\%$ dos testes apresentaram melhor desempenho
+com GARCH, $7\%$ não apresentaram diferença e na metade restante a utilização do
+GARCH trouxe um conjunto de resíduos mais correlacionados do que a não
+utilização dele. Em dados não migrados, entretanto, metade dos testes com a
+utilização do GARCH obteve um conjunto de resíduos mais descorrelacionado, em
+$4\%$ houve empate e nos $46\%$ restantes a não utilização do modelo GARCH
+trouxe resíduos mais descorrelacionados. Para dados sem a informação de migrado
+ou não disponível, os índices de ganho, empate e perda na utilização do GARCH
+foram, respectivamente, 53\%, 2\% e 45\%.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da correlação entre dados migrados e não
+ migrados} \label{Tabela:EvolucaoCorrelacaoMigradoNaoMigrado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível & 53\%  & 2\%   & 45\% \\
+    Não Migrado & 50\%  & 4\%   & 46\% \\
+    Migrado & 43\%  & 7\%   & 50\% \\
+\end{longtable}
+\end{center}
+
+Na tabela~\ref{Tabela:EvolucaoCorrelacaoRuidoEstimado}, são mostrados os resultados
+de acordo com o ruído estimado no dado. Em dados com ruído estimado em alto, o
+GARCH foi inferior em $29\%$ dos testes, houve empate em $9\%$ e ganho sem GARCH
+em $61\%$ dos testes realizados. Em dados com ruído estimado em baixo, o GARCH
+foi superior em $51\%$ dos testes, irrelevante em $2\%$ e perdeu nos $47\%$
+restantes. Para dados com ruído estimado em médio, a utilização do GARCH
+foi melhor em $53\%$ dos testes, empatou em $5\%$ e foi vencida nos $42\%$ que
+sobram.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da entropia entre dados com relação ao ruído
+ estimado do dado}\label{Tabela:EvolucaoCorrelacaoRuidoEstimado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Alto  & 29\%  & 9\%   & 61\% \\
+    Baixo & 51\%  & 2\%   & 47\% \\
+    Médio & 53\%  & 5\%   & 42\% \\
+\end{longtable}
+\end{center}
+
+A tabela~\ref{Tabela:EvolucaoCorrelacaoSinteticoOuNaoSintetico} mostra a
+diferença de desempenho da correlação das soluções sem e com GARCH em dados
+sintéticos. Para dados sintéticos, o GARCH alcançou uma razão de compressão
+melhor em $47\%$ das vezes, empatou em $3\%$ e foi superado em $50\%$ dos testes. Já para dados não
+sintéticos, esses valores mudam para $49\%$, $5\%$ e $46\%$, respectivamente.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da correlação entre dados sintéticos e
+ não-sintéticos} \label{Tabela:EvolucaoCorrelacaoSinteticoOuNaoSintetico} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Sintético & 7\%   & 68\%  & 25\% \\
+    Sintético & 5\%   & 71\%  & 24\% \\
+\end{longtable}
+\end{center}
+
+\subsection{Evolução Variância}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{fig/res/consolidado_var.png}
+\caption[Variância consolidada]{Consolidação da evolução da variância envolvendo
+todas as metodologias}
+\label{Figura:ConsolidadoVAR}
+\end{figure}
+
+A tabela~\ref{Tabela:EvolucaoVarianciaPrePosStack} apresenta a evolução da
+variância de dados pré e pós-stack levando em consideração todas as
+metodologias de teste. Em dados pré-stack, a utilização do GARCH foi positiva em
+$16\%$ dos testes, inferior em $80\%$ e irrelevante nos outros $4\%$. Para dados
+pós-stack, houve vantagem utilizando o GARCH em $12\%$ dos testes e desvantagem
+em $87\%$; nos $1\%$ restantes a utilização do modelo foi irrelevante. Para
+dados sem informação disponível, houve ganho em $22\%$ dos testes e piora nos
+$78\%$ restantes.
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption{Compilado da evolução da variância entre dados pré e pós-stack}
+\label{Tabela:EvolucaoVarianciaPrePosStack} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível   & 22\%  & 0\%   & 78\% \\
+    Pós-stack & 12\%  & 1\%   & 87\% \\
+    Pré-stack & 16\%  & 4\%   & 80\% \\
+\end{longtable}
+\end{center}
+
+Já a tabela~\ref{Tabela:EvolucaoVarianciaMigradoNaoMigrado} compila os
+resultados de dados migrados e não migrados. Em dados migrados, $15\%$ dos
+testes apresentaram melhor desempenho com GARCH, $1\%$ não apresentou
+diferença e nos $81\%$ restantes a utilização do GARCH trouxe um conjunto de
+resíduos com variância superior do que a não utilização dele. Em dados não
+migrados, os valores são bem parecidos, com uma pequena variação de três pontos
+percentuais a mais ao empate e a menos na utilização sem GARCH. Para dados sem a
+informação de migrado ou não disponível, os índices de ganho, empate e perda na utilização do GARCH
+foram, respectivamente, 78\%, 0\% e 22\%.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da correlação entre dados migrados e não
+ migrados} \label{Tabela:EvolucaoVarianciaMigradoNaoMigrado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Disponível & 22\%  & 0\%   & 78\% \\
+    Não Migrado & 15\%  & 4\%   & 81\% \\
+    Migrado   & 15\%  & 1\%   & 85\% \\
+\end{longtable}
+\end{center}
+
+Na tabela~\ref{Tabela:EvolucaoVarianciaRuidoEstimado}, são mostrados os
+resultados de acordo com o ruído estimado no dado. Em dados com ruído estimado em alto, o
+GARCH foi inferior em $17\%$ dos testes, houve empate em $1\%$ e ganho sem GARCH
+em $82\%$ dos testes realizados. Em dados com ruído estimado em baixo, o GARCH
+foi superior em $17\%$ dos testes, irrelevante em $2\%$ e perdeu nos $81\%$
+restantes. Para dados com ruído estimado em médio, a utilização do GARCH
+foi melhor em $13\%$ dos testes, empatou em $4\%$ e foi vencida nos $83\%$ que
+sobram.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da variância entre dados com relação ao ruído
+ estimado do dado}\label{Tabela:EvolucaoVarianciaRuidoEstimado} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Ruido\\estimado\\no dado} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Alto  & 17\%  & 1\%   & 82\% \\
+    Baixo & 17\%  & 2\%   & 81\% \\
+    Médio & 13\%  & 4\%   & 83\% \\
+\end{longtable}
+\end{center}
+
+A tabela~\ref{Tabela:EvolucaoVarianciaSinteticoOuNaoSintetico} mostra a
+diferença de desempenho da correlação das soluções sem e com GARCH em dados
+sintéticos. Para dados sintéticos, o GARCH alcançou uma evolução da variância
+ melhor em $16\%$ das vezes, empatou em $4\%$ e foi superado em $80\%$
+dos testes. Já para dados não sintéticos, esses valores mudam para $15\%$, $2\%$
+e $83\%$, respectivamente.
+
+ \begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+ \caption{Compilado da evolução da variância entre dados sintéticos e
+ não-sintéticos} \label{Tabela:EvolucaoVarianciaSinteticoOuNaoSintetico} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   \specialcell{Tipo de\\dado experimentos} & \specialcell{Melhor com\\GARCH} &
+   Empate & \specialcell{Melhor sem\\GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    Não Sintético & 15\%  & 2\%   & 83\% \\
+    Sintético & 16\%  & 4\%   & 80\% \\
+\end{longtable}
+\end{center}

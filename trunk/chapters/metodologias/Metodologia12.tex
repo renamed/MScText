@@ -1,0 +1,677 @@
+
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XII: comparativo de convergência de soluções]{Comparativo
+   de quantidade de experimentos cujas soluções convergiram com e sem a
+   utilização do GARCH na metodologia XII} \label{Tab:convergenciaMet12} \\
+\midrule
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+	Sem GARCH & 39 & 39 & 0 & 100\% \\
+	Com GARCH & 39 & 38 & 1 & 97,44\% \\
+\end{longtable}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XII: Razão de compressão]{Razão de compressão dos
+experimentos sem e com GARCH na Metodologia XII.
+Valores em bytes.} \label{Tab:razaocompressaoMet} \\
+\midrule
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    A1    & 1152000 & 844793 & 852811 & 1,36  & 1,35 \\
+    A2    & 1152000 & 804364 & 799285 & 1,43  & 1,44 \\
+    A3    & 1152000 & 783975 & 842675 & 1,47  & 1,37 \\
+    B1    & 518592 & 127044 & 165080 & 4,08  & 3,14 \\
+    B2    & 518592 & 127044 & 165080 & 4,08  & 3,14 \\
+    B3    & 518592 & 127044 & 165080 & 4,08  & 3,14 \\
+    C1    & 288192 & 260244 & 263429 & 1,11  & 1,09 \\
+    C2    & 288192 & 242375 & 245301 & 1,19  & 1,17 \\
+    C3    & 288192 & 254439 & 247027 & 1,13  & 1,17 \\
+    D1    & 331200 & 250631 & 258995 & 1,32  & 1,28 \\
+    D2    & 331200 & 258535 & 247723 & 1,28  & 1,34 \\
+    D3    & 331200 & 212475 & 230392 & 1,56  & 1,44 \\
+    E1    & 33792 & 30637 & 30625 & 1,10  & 1,10 \\
+    E2    & 33792 & 30806 & 30819 & 1,10  & 1,10 \\
+    E3    & 33792 & 30817 & 30715 & 1,10  & 1,10 \\
+    F1    & 220992 & 184376 & 184207 & 1,20  & 1,20 \\
+    F2    & 220992 & 125735 & 127888 & 1,76  & 1,73 \\
+    F3    & 220992 & 127564 & 132097 & 1,73  & 1,67 \\
+    G1    & 139392 & 117176 & 117203 & 1,19  & 1,19 \\
+    G2    & 139392 & 74223 & 73108 & 1,88  & 1,91 \\
+    G3    & 139392 & 85569 & 90057 & 1,63  & 1,55 \\
+    H1    & 360192 & 329971 & 330046 & 1,09  & 1,09 \\
+    H2    & 360192 & 298985 & 319242 & 1,20  & 1,13 \\
+    H3    & 360192 & 299588 & 298978 & 1,20  & 1,20 \\
+    I1    & 221184 & 165275 & 164019 & 1,34  & 1,35 \\
+    I2    & 221184 & 119553 & 131592 & 1,85  & 1,68 \\
+    I3    & 221184 & 172358 & 172000 & 1,28  & 1,29 \\
+    J1    & 591936 & 294699 & 434055 & 2,01  & 1,36 \\
+    J2    & 591936 & 311484 & 302095 & 1,90  & 1,96 \\
+    J3    & 591936 & 278145 & 318791 & 2,13  & 1,86 \\
+    K1    & 288000 & 201562 & 200068 & 1,43  & 1,44 \\
+    K2    & 288000 & 190610 & 184968 & 1,51  & 1,56 \\
+    K3    & 288000 & 181902 & 200408 & 1,58  & 1,44 \\
+    L1    & 480192 & 393002 & 397250 & 1,22  & 1,21 \\
+    L2    & 480192 & 393310 & 407744 & 1,22  & 1,18 \\
+    L3    & 480192 & 407263 & 404521 & 1,18  & 1,19 \\
+    L4    & 480192 & 387453 & 381233 & 1,24  & 1,26 \\
+    L5    & 480192 & 379477 & 378616 & 1,27  & 1,27 \\
+    L6    & 480192 & 373286 & 378008 & 1,29  & 1,27 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXII00.png}
+% \caption[Metodologia XII: razão de compressão dos conjuntos A, B e C]{Gráfico
+% com comparativo da razão de compressão dos conjuntos A, B e C sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:razaocompressaoABCMet12}
+% \end{figure}
+%  
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXII01.png}
+% \caption[Metodologia XII: razão de compressão dos conjuntos D, E e F]{Gráfico
+% com comparativo da razão de compressão dos conjuntos D, E e F sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:razaocompressaoDEFMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXII02.png}
+% \caption[Metodologia XII: razão de compressão dos conjuntos G, H e I]{Gráfico
+% com comparativo da razão de compressão dos conjuntos G, H e I sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:razaocompressaoGHIMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXII03.png}
+% \caption[Metodologia XII: razão de compressão dos conjuntos J, K e L]{Gráfico
+% com comparativo da razão de compressão dos conjuntos J, K e L sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:razaocompressaoJKLMet12}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.9]{fig/res/razaocompMetXII04.png}
+% \caption[Metodologia XII: razão de compressão]{Gráfico com comparativo da razão
+% de compressão na Metodologia XII}
+% \label{Figura:razaocompressaoPizzaMet12}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XII: evolução da entropia]{Evolução da entropia do dado
+original e do resíduo calculado na metodologia XII}
+\label{tab:EvolucaoEntropiaMet12}\\
+\midrule
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 11,30 & 10,94 & 10,92 \\
+    A2    & 11,30 & 10,52 & 10,50 \\
+    A3    & 11,27 & 10,64 & 10,63 \\
+    B1    & 7,64  & 3,10  & 2,76 \\
+    B2    & 7,64  & 3,10  & 2,76 \\
+    B3    & 7,64  & 3,10  & 2,76 \\
+    C1    & 12,34 & 12,02 & 11,99 \\
+    C2    & 13,18 & 12,65 & 12,59 \\
+    C3    & 13,17 & 12,65 & 12,64 \\
+    D1    & 9,48  & 9,12  & 9,12 \\
+    D2    & 12,38 & 11,23 & 11,16 \\
+    D3    & 6,45  & 6,15  & 6,07 \\
+    E1    & 10,80 & 10,80 & 10,80 \\
+    E2    & 10,78 & 10,78 & 10,78 \\
+    E3    & 10,80 & 10,80 & 10,80 \\
+    F1    & 10,20 & 10,07 & 10,06 \\
+    F2    & 8,20  & 7,07  & 7,05 \\
+    F3    & 9,27  & 7,36  & 7,24 \\
+    G1    & 12,03 & 11,71 & 11,72 \\
+    G2    & 11,79 & 7,80  & 7,52 \\
+    G3    & 12,06 & 9,23  & 9,24 \\
+    H1    & 8,44  & 8,44  & 8,44 \\
+    H2    & 12,29 & 12,15 & 12,14 \\
+    H3    & 12,33 & 12,18 & 12,17 \\
+    I1    & 8,14  & 7,62  & 7,60 \\
+    I2    & 9,59  & 7,28  & 6,54 \\
+    I3    & 8,15  & 7,79  & 7,78 \\
+    J1    & 8,50  & 6,76  & 6,25 \\
+    J2    & 8,52  & 6,78  & 6,33 \\
+    J3    & 8,53  & 6,81  & 6,29 \\
+    K1    & 10,94 & 10,07 & 10,01 \\
+    K2    & 10,89 & 9,99  & 9,95 \\
+    K3    & 10,87 & 9,97  & 9,93 \\
+    L1    & 11,27 & 11,27 & 11,27 \\
+    L2    & 11,08 & 11,08 & 11,08 \\
+    L3    & 11,31 & 11,31 & 11,31 \\
+    L4    & 12,80 & 11,97 & 11,80 \\
+    L5    & 10,67 & 10,67 & 10,67 \\
+    L6    & 11,58 & 11,58 & 11,58 \\
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXII00.png} 
+% \caption[Metodologia XII: evolução da entropia nos conjuntos A, B e C]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos A, B e C sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:evolucaoentropiaABCMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXII01.png} 
+% \caption[Metodologia XII: evolução da entropia nos conjuntos D, E e F]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos D, E e F sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:evolucaoentropiaDEFMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXII02.png} 
+% \caption[Metodologia XII: evolução da entropia nos conjuntos G, H e I]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos G, H e I sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:evolucaoentropiaGHIMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetXII03.png} 
+% \caption[Metodologia XII: evolução da entropia nos conjuntos J e K]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos J e K sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:evolucaoentropiaJKMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetXII04.png} 
+% \caption[Metodologia XII: evolução da entropia nos conjuntos L]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos L sem e com GARCH na
+% Metodologia XII}
+% \label{Figura:evolucaoentropiaLMet12}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1]{fig/res/evolucaoentropiaMetXII05.png} 
+% \caption[Metodologia XII: evolução da entropia]{Gráfico com comparativo da
+% evolução da entopia na Metodologia XII}
+% \label{Figura:evolucaoentropiaPizzaMet12}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XII: tempo de execução]{Tempo de execução (em segundos)
+dos algoritmos sem e com GARCH na Metodologia XII. Primeiro é exibido o tempo de
+execução sem a utilização do modelo GARCH, depois com o modelo. Parâmetros
+modelo se refere ao tempo gasto pelo algoritmo para o cálculo dos parâmetros do
+modelo, Resíduo refere-se ao tempo gasto pelo modelo para calcular o resíduo do
+modelo, Cod. Arit. refere-se ao tempo gasto pela codificação aritmética para
+comprimir o resíduo.} \label{tab:EvolucaoEntropiaMet12}\\
+\midrule
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1&117&$<1$&2&120&730&1&2&733\\
+A2&772&1&8&781&1.118&1&2&1.121\\
+A3&663&2&4&669&1.891&1&3&1.895\\
+B1&143&1&3&146&575&1&2&578\\
+B2&141&1&2&144&580&$<1$&$<1$&581\\
+B3&136&1&3&139&576&2&2&579\\
+C1&38&$<1$&2&40&162&1&2&165\\
+C2&37&1&1&39&139&1&2&142\\
+C3&46&$<1$&2&48&124&1&1&126\\
+D1&46&1&3&49&152&1&3&156\\
+D2&52&1&3&55&373&$<1$&1&375\\
+D3&43&$<1$&2&45&127&$<1$&2&130\\
+E1&15&$<1$&$<1$&15&80&$<1$&$<1$&80\\
+E2&11&$<1$&$<1$&12&111&$<1$&$<1$&112\\
+E3&9&$<1$&$<1$&9&51&$<1$&$<1$&51\\
+F1&16&$<1$&3&19&76&1&2&79\\
+F2&140&1&1&142&447&1&$<1$&447\\
+F3&182&1&1&184&452&$<1$&$<1$&453\\
+G1&14&$<1$&1&16&77&$<1$&1&78\\
+G2&115&$<1$&$<1$&116&539&$<1$&$<1$&539\\
+G3&52&$<1$&1&53&287&$<1$&$<1$&287\\
+H1&55&1&3&59&188&$<1$&1&189\\
+H2&190&1&3&194&749&$<1$&1&751\\
+H3&27&$<1$&1&28&123&1&3&128\\
+I1&179&$<1$&2&181&258&$<1$&1&259\\
+I2&198&1&1&199&419&1&1&421\\
+I3&55&$<1$&1&56&429&$<1$&4&433\\
+J1&235&$<1$&3&239&877&2&2&881\\
+J2&155&1&4&160&947&1&1&949\\
+J3&251&$<1$&1&252&894&2&2&899\\
+K1&49&$<1$&1&49&167&$<1$&1&168\\
+K2&112&$<1$&1&113&381&1&2&384\\
+K3&130&1&1&131&150&1&2&152\\
+L1&271&1&3&274&1.020&$<1$&1&1.021\\
+L2&256&1&4&261&682&1&1&684\\
+L3&375&1&2&378&837&1&3&840\\
+L4&338&1&4&343&1.201&2&2&1.205\\
+L5&592&1&5&598&1.334&$<1$&1&1.335\\
+L6&163&1&4&168&385&1&4&391\\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetXII00.png} 
+% \caption[Metodologia XII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos A, B, C e D]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos A, B, C e D sem e com GARCH na Metodologia
+% XII}
+% \label{Figura:tempocalculoABCDMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXII01.png} 
+% \caption[Metodologia XII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos E, F e G]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos E, F e G sem e com GARCH na Metodologia
+% XII}
+% \label{Figura:tempocalculoEFGMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXII02.png} 
+% \caption[Metodologia XII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos H, I e J]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos H, I e J sem e com GARCH na Metodologia
+% XII}
+% \label{Figura:tempocalculoHIJMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering 
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetXII03.png} 
+% \caption[Metodologia XII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos K e L]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos K e L sem e com GARCH na Metodologia XII}
+% \label{Figura:tempocalculoKLMet12}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXII04.png} 
+% \caption[Metodologia XII: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo do tempo total relativo de cálculo
+% dos parâmetros dos modelos sem e com GARCH na Metodologia XII}
+% \label{Figura:tempocalculoPizzaMet12}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XII: evolução da autocorrelação]{Autocorrelação do dado
+original e dos resíduos gerados sem e com a utilização do modelo GARCH na
+Metodologia XII} \label{tab:EvolucaoAutocorrelacaoMet12}\\
+\midrule
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 6     & 0     & 1 \\
+A2    & 5     & 0     & 0 \\
+A3    & 6     & 0     & 0 \\
+B1    & 6     & 0     & 3 \\
+B2    & 6     & 0     & 3 \\
+B3    & 6     & 0     & 3 \\
+C1    & 2     & 0     & 1 \\
+C2    & 1     & 0     & 11 \\
+C3    & 2     & 0     & 12 \\
+D1    & 2     & 1     & 0 \\
+D2    & 2     & 0     & 1 \\
+D3    & 2     & 4     & 7 \\
+E1    & 4     & 0     & 0 \\
+E2    & 4     & 0     & 0 \\
+E3    & 4     & 0     & 0 \\
+F1    & 1     & 4     & 4 \\
+F2    & 6     & 0     & 1 \\
+F3    & 6     & 1     & 0 \\
+G1    & 1     & 1     & 1 \\
+G2    & 2     & 1     & 1 \\
+G3    & 6     & 1     & 0 \\
+H1    & 1     & 0     & 0 \\
+H2    & 1     & 0     & 0 \\
+H3    & 1     & 0     & 0 \\
+I1    & 7     & 0     & 0 \\
+I2    & 1     & 0     & 3 \\
+I3    & 1     & 1     & 1 \\
+J1    & 3     & 0     & 4 \\
+J2    & 3     & 0     & 0 \\
+J3    & 8     & 0     & 0 \\
+K1    & 3     & 0     & 0 \\
+K2    & 3     & 0     & 1 \\
+K3    & 2     & 0     & 0 \\
+L1    & 2     & 0     & 0 \\
+L2    & 7     & 0     & 2 \\
+L3    & 11    & 0     & 0 \\
+L4    & 7     & 0     & 2 \\
+L5    & 7     & 0     & 0 \\
+L6    & 6     & 0     & 0 \\
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetXII00.png} 
+% \caption[Metodologia XII: evolução da autocorrelação nos conjuntos A, B e
+% C]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos A, B e C na
+% Metodologia XII}
+% \label{Figura:autocorrelacaoABCMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXII01.png} 
+% \caption[Metodologia XII: evolução da autocorrelação nos conjuntos D, E e
+% F]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos D, E e F na
+% Metodologia XII}
+% \label{Figura:autocorrelacaoDEFMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXII02.png} 
+% \caption[Metodologia XII: evolução da autocorrelação nos conjuntos G, H e
+% I]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos G, H e I na
+% Metodologia XII}
+% \label{Figura:autocorrelacaoGHIMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXII03.png} 
+% \caption[Metodologia XII: evolução da autocorrelação nos conjuntos J e
+% K]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos J e K na
+% Metodologia XII}
+% \label{Figura:autocorrelacaoJKMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXII04.png} 
+% \caption[Metodologia XII: evolução da autocorrelação nos conjuntos L]{Gráfico
+% com comparativo da autocorrelação do resíduo gerado sem e com a utilização do modelo GARCH em relação ao dado original nos conjuntos L na
+% Metodologia XII}
+% \label{Figura:autocorrelacaoLMet12}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetXII05.png} 
+% \caption[Metodologia XII: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo da redução relativa total da
+% autocorrelação do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia XII}
+% \label{Figura:tempocalculoPizzaMet12}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XII: dados estatísticos]{Média e variância do dado original
+comparadas às do resíduo calculado sem e com a utilização do modelo GARCH na
+Metodologia XII} \label{tab:DadosEstatisticosMet12}\\
+\midrule
+    Conjunto & \specialcell{Média\\Original} &
+    \specialcell{Var.\\Original} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+    Conjunto & \specialcell{Média\\Orig.} &
+    \specialcell{Var.\\Orig.} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 3,0E+04 & 1,8E+07 & 0,5   & 3,0E+05 & -0,5  & 3,0E+05 \\
+A2    & 3,2E+04 & 1,1E+07 & -0,7  & 2,4E+05 & -1,8  & 2,5E+05 \\
+A3    & 3,1E+04 & 1,4E+07 & -0,7  & 2,5E+05 & -0,8  & 2,6E+05 \\
+B1    & 2,8E+04 & 4,5E+05 & 0,4   & 1,1E+01 & 0,4   & 1,0E+02 \\
+B2    & 2,8E+04 & 4,5E+05 & 0,4   & 1,1E+01 & 0,4   & 1,0E+02 \\
+B3    & 2,8E+04 & 4,5E+05 & 0,4   & 1,1E+01 & 0,4   & 1,0E+02 \\
+C1    & 3,3E+04 & 8,1E+07 & 0,4   & 1,7E+07 & -4,1  & 2,8E+07 \\
+C2    & 3,3E+04 & 4,0E+07 & 0,8   & 1,1E+07 & 1,3   & 2,0E+07 \\
+C3    & 3,3E+04 & 5,7E+07 & 0,5   & 9,0E+06 & 0,8   & 1,4E+07 \\
+D1    & 3,7E+04 & 4,1E+07 & 0,7   & 1,2E+06 & 0,1   & 1,3E+06 \\
+D2    & 3,3E+04 & 1,2E+07 & 0,6   & 1,0E+06 & 0,4   & 1,7E+06 \\
+D3    & 3,1E+04 & 1,0E+07 & 0,8   & 4,5E+05 & 2,8   & 5,8E+05 \\
+E1    & 2,9E+04 & 5,8E+07 & 2,0   & 1,6E+07 & -4,2  & 1,6E+07 \\
+E2    & 3,0E+04 & 5,8E+07 & 2,7   & 1,8E+07 & 11,6  & 1,8E+07 \\
+E3    & 3,0E+04 & 6,0E+07 & 3,8   & 1,8E+07 & 4,1   & 1,8E+07 \\
+F1    & 3,8E+04 & 3,9E+07 & 0,5   & 5,6E+06 & 0,4   & 5,6E+06 \\
+F2    & 2,3E+04 & 5,4E+06 & 0,6   & 1,6E+05 & -0,8  & 2,5E+05 \\
+F3    & 2,6E+04 & 6,0E+06 & 29,8  & 1,4E+05 & 2,3   & 8,3E+04 \\
+G1    & 3,3E+04 & 3,3E+07 & 2,9   & 2,6E+06 & 0,1   & 2,6E+06 \\
+G2    & 3,8E+04 & 1,9E+07 & 0,5   & 1,9E+04 & 2,1   & 2,7E+04 \\
+G3    & 2,9E+04 & 3,6E+07 & 0,6   & 7,7E+04 & 2,3   & 8,3E+04 \\
+H1    & 3,1E+04 & 3,6E+07 & -2,7  & 3,5E+07 & 38,2  & 3,5E+07 \\
+H2    & 3,4E+04 & 8,1E+06 & 3,5   & 3,5E+06 & 33,0  & 3,8E+06 \\
+H3    & 3,2E+04 & 7,3E+06 & 0,6   & 4,9E+06 & 0,1   & 5,1E+06 \\
+I1    & 3,6E+04 & 1,2E+07 & -16,3 & 8,0E+05 & 1,3   & 7,2E+05 \\
+I2    & 2,9E+04 & 1,2E+06 & 0,5   & 6,1E+04 & 0,0   & 1,6E+05 \\
+I3    & 3,1E+04 & 3,3E+07 & 3,1E+04 & 3,3E+07 & 3,1E+04 & 3,3E+07 \\
+J1    & 3,7E+04 & 1,2E+06 & 0,5   & 1,0E+04 & 0,5   & 4,8E+04 \\
+J2    & 3,5E+04 & 1,5E+06 & 0,4   & 1,3E+04 & 0,5   & 6,2E+04 \\
+J3    & 3,3E+04 & 1,3E+06 & 0,5   & 1,1E+04 & 0,5   & 5,5E+04 \\
+K1    & 3,9E+04 & 6,9E+06 & 0,5   & 2,5E+05 & 1,3   & 2,6E+05 \\
+K2    & 4,0E+04 & 6,7E+06 & 0,1   & 2,3E+05 & 0,3   & 3,4E+05 \\
+K3    & 3,6E+04 & 5,8E+06 & 0,7   & 2,9E+05 & 0,8   & 3,2E+05 \\
+L1    & 3,4E+04 & 2,9E+07 & 0,2   & 2,0E+06 & -1,3  & 3,1E+06 \\
+L2    & 3,1E+04 & 1,5E+07 & 0,3   & 3,8E+06 & -0,3  & 4,6E+06 \\
+L3    & 3,5E+04 & 1,3E+07 & 0,7   & 4,5E+06 & 0,4   & 5,0E+06 \\
+L4    & 3,7E+04 & 1,8E+07 & 0,8   & 2,5E+06 & 3,4   & 5,1E+06 \\
+L5    & 3,1E+04 & 5,1E+07 & 0,4   & 1,0E+06 & 1,1   & 1,0E+06 \\
+L6    & 3,2E+04 & 2,6E+07 & 0,7   & 1,0E+06 & -1,2  & 1,1E+06 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXII03.png} 
+% \caption[Metodologia XII: Variância do conjunto A]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto A na Metodologia XII}
+% \label{Figura:estatisticaAMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXII00.png} 
+% \caption[Metodologia XII: Variância do conjunto B]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto B na Metodologia XII}
+% \label{Figura:estatisticaBMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXII01.png} 
+% \caption[Metodologia XII: Variância do conjunto C]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto C na Metodologia XII}
+% \label{Figura:estatisticaCMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXII02.png} 
+% \caption[Metodologia XII: Variância dos conjuntos D e E]{Gráfico com comparativo
+% da variância original do dado e dos resíduos gerados pelos modelos sem e com
+% GARCH dos conjuntos D e E na Metodologia XII}
+% \label{Figura:estatisticaDEMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXII04.png} 
+% \caption[Metodologia XII: Variância do conjunto F]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto F na Metodologia XII}
+% \label{Figura:estatisticaFMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXII05.png} 
+% \caption[Metodologia XII: Variância dos conjuntos G, H e I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos G, H e I na Metodologia XII}
+% \label{Figura:estatisticaGHIMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXII06.png} 
+% \caption[Metodologia XII: Variância dos conjuntos J e K]{Gráfico
+% com comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos J e K na Metodologia XII}
+% \label{Figura:estatisticaJKMet12}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXII07.png} 
+% \caption[Metodologia XII: Variância do conjunto L]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto L na Metodologia XII}
+% \label{Figura:estatisticaLMet12}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.65]{fig/res/estatisticasMetXII08.png} 
+% \caption[Metodologia XII: redução relativa da variância]{Gráfico com comparativo
+% da redução relativa total da variância do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia XII}
+% \label{Figura:estatisticaPizzaMet12}
+% \end{figure}

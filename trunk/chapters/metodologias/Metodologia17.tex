@@ -1,0 +1,678 @@
+
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XVII: comparativo de convergência de soluções]{Comparativo
+   de quantidade de experimentos cujas soluções convergiram com e sem a
+   utilização do GARCH na metodologia XVII} \label{Tab:convergenciaMet17} \\
+\midrule
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+   Cenário & \specialcell{Total experimentos} & Convergiram &
+   \specialcell{Não convergiram} & \% sucesso \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+	Sem GARCH & 39 & 39 & 0 & 100\% \\
+	Com GARCH & 39 & 39 & 0 & 100\% \\
+\end{longtable}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{longtable}{cccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XVII: Razão de compressão]{Razão de compressão dos
+experimentos sem e com GARCH na Metodologia XVII.
+Valores em bytes.} \label{Tab:razaocompressaoMet} \\
+\midrule
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Tamanho \\Original} & \specialcell{Tamanho
+\\Comprimido\\Com GARCH} & \specialcell{Tamanho
+\\Comprimido\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Sem GARCH} & \specialcell{Razão \\Compressão
+\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+    A1    & 1152000 & 954344 & 893184 & 1,21  & 1,29 \\
+    A2    & 1152000 & 887276 & 887578 & 1,30  & 1,30 \\
+    A3    & 1152000 & 931794 & 934352 & 1,24  & 1,23 \\
+    B1    & 518592 & 165773 & 201734 & 3,13  & 2,57 \\
+    B2    & 518592 & 165773 & 201734 & 3,13  & 2,57 \\
+    B3    & 518592 & 165773 & 201734 & 3,13  & 2,57 \\
+    C1    & 288192 & 289977 & 289545 & 0,99  & 1,00 \\
+    C2    & 288192 & 268616 & 268355 & 1,07  & 1,07 \\
+    C3    & 288192 & 279327 & 279471 & 1,03  & 1,03 \\
+    D1    & 331200 & 305081 & 304452 & 1,09  & 1,09 \\
+    D2    & 331200 & 286850 & 286746 & 1,15  & 1,16 \\
+    D3    & 331200 & 270748 & 269835 & 1,22  & 1,23 \\
+    E1    & 33792 & 35948 & 36013 & 0,94  & 0,94 \\
+    E2    & 33792 & 36265 & 36342 & 0,93  & 0,93 \\
+    E3    & 33792 & 36369 & 36429 & 0,93  & 0,93 \\
+    F1    & 220992 & 211790 & 211380 & 1,04  & 1,05 \\
+    F2    & 220992 & 153063 & 152177 & 1,44  & 1,45 \\
+    F3    & 220992 & 140878 & 138069 & 1,57  & 1,60 \\
+    G1    & 139392 & 133970 & 134053 & 1,04  & 1,04 \\
+    G2    & 139392 & 123306 & 123340 & 1,13  & 1,13 \\
+    G3    & 139392 & 127013 & 127089 & 1,10  & 1,10 \\
+    H1    & 360192 & 351529 & 351447 & 1,02  & 1,02 \\
+    H2    & 360192 & 315746 & 316270 & 1,14  & 1,14 \\
+    H3    & 360192 & 319918 & 320252 & 1,13  & 1,12 \\
+    I1    & 221184 & 186000 & 186135 & 1,19  & 1,19 \\
+    I2    & 221184 & 153086 & 158602 & 1,44  & 1,39 \\
+    I3    & 221184 & 198730 & 198325 & 1,11  & 1,12 \\
+    J1    & 591936 & 341116 & 353911 & 1,74  & 1,67 \\
+    J2    & 591936 & 390343 & 387674 & 1,52  & 1,53 \\
+    J3    & 591936 & 353550 & 353748 & 1,67  & 1,67 \\
+    K1    & 288000 & 214269 & 219172 & 1,34  & 1,31 \\
+    K2    & 288000 & 212510 & 220554 & 1,36  & 1,31 \\
+    K3    & 288000 & 223964 & 216077 & 1,29  & 1,33 \\
+    L1    & 480192 & 435845 & 436113 & 1,10  & 1,10 \\
+    L2    & 480192 & 438310 & 435345 & 1,10  & 1,10 \\
+    L3    & 480192 & 444797 & 445536 & 1,08  & 1,08 \\
+    L4    & 480192 & 443013 & 424111 & 1,08  & 1,13 \\
+    L5    & 480192 & 412071 & 410312 & 1,17  & 1,17 \\
+    L6    & 480192 & 417488 & 416981 & 1,15  & 1,15 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXVII00.png}
+% \caption[Metodologia XVII: razão de compressão dos conjuntos A, B e C]{Gráfico
+% com comparativo da razão de compressão dos conjuntos A, B e C sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:razaocompressaoABCMet17}
+% \end{figure}
+%  
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXVII01.png}
+% \caption[Metodologia XVII: razão de compressão dos conjuntos D, E e F]{Gráfico
+% com comparativo da razão de compressão dos conjuntos D, E e F sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:razaocompressaoDEFMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXVII02.png}
+% \caption[Metodologia XVII: razão de compressão dos conjuntos G, H e I]{Gráfico
+% com comparativo da razão de compressão dos conjuntos G, H e I sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:razaocompressaoGHIMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/razaocompMetXVII03.png}
+% \caption[Metodologia XVII: razão de compressão dos conjuntos J, K e L]{Gráfico
+% com comparativo da razão de compressão dos conjuntos J, K e L sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:razaocompressaoJKLMet17}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.9]{fig/res/razaocompMetXVII04.png}
+% \caption[Metodologia XVII: razão de compressão]{Gráfico com comparativo da razão
+% de compressão na Metodologia XVII}
+% \label{Figura:razaocompressaoPizzaMet17}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XVII: evolução da entropia]{Evolução da entropia do dado
+original e do resíduo calculado na metodologia XVII}
+\label{tab:EvolucaoEntropiaMet17}\\
+\midrule
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\midrule
+\endfirsthead
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Entropia \\Inicial} & \specialcell{Entropia do
+\\Resíduo sem GARC} & \specialcell{Entropia do
+\\Resíduo com GARC}  \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+    A1    & 11,30 & 11,17 & 11,17 \\
+    A2    & 11,30 & 10,67 & 10,67 \\
+    A3    & 11,27 & 10,80 & 10,80 \\
+    B1    & 7,64  & 3,10  & 2,76 \\
+    B2    & 7,64  & 3,10  & 2,76 \\
+    B3    & 7,64  & 3,10  & 2,76 \\
+    C1    & 12,34 & 12,18 & 12,17 \\
+    C2    & 13,18 & 12,79 & 12,79 \\
+    C3    & 13,17 & 12,80 & 12,80 \\
+    D1    & 9,48  & 9,48  & 9,48 \\
+    D2    & 12,38 & 11,72 & 11,70 \\
+    D3    & 6,45  & 6,28  & 6,27 \\
+    E1    & 10,80 & 10,80 & 10,80 \\
+    E2    & 10,78 & 10,78 & 10,78 \\
+    E3    & 10,80 & 10,80 & 10,80 \\
+    F1    & 10,20 & 10,07 & 10,06 \\
+    F2    & 8,20  & 7,17  & 7,17 \\
+    F3    & 9,27  & 7,38  & 7,26 \\
+    G1    & 12,03 & 11,71 & 11,72 \\
+    G2    & 11,79 & 11,37 & 11,39 \\
+    G3    & 12,06 & 11,77 & 11,77 \\
+    H1    & 8,44  & 8,44  & 8,44 \\
+    H2    & 12,29 & 12,21 & 12,20 \\
+    H3    & 12,33 & 12,18 & 12,17 \\
+    I1    & 8,14  & 7,85  & 7,84 \\
+    I2    & 9,59  & 7,75  & 6,88 \\
+    I3    & 8,15  & 7,99  & 8,00 \\
+    J1    & 8,50  & 7,00  & 6,21 \\
+    J2    & 8,52  & 6,61  & 6,47 \\
+    J3    & 8,53  & 7,42  & 6,22 \\
+    K1    & 10,94 & 10,07 & 10,01 \\
+    K2    & 10,89 & 9,92  & 9,65 \\
+    K3    & 10,87 & 9,94  & 9,94 \\
+    L1    & 11,27 & 11,27 & 11,27 \\
+    L2    & 11,08 & 11,08 & 11,08 \\
+    L3    & 11,31 & 11,31 & 11,31 \\
+    L4    & 12,80 & 12,32 & 12,07 \\
+    L5    & 10,67 & 10,67 & 10,67 \\
+    L6    & 11,58 & 11,58 & 11,58 \\
+
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXVII00.png} 
+% \caption[Metodologia XVII: evolução da entropia nos conjuntos A, B e C]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos A, B e C sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:evolucaoentropiaABCMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXVII01.png} 
+% \caption[Metodologia XVII: evolução da entropia nos conjuntos D, E e F]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos D, E e F sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:evolucaoentropiaDEFMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/evolucaoentropiaMetXVII02.png} 
+% \caption[Metodologia XVII: evolução da entropia nos conjuntos G, H e I]{Gráfico
+% com comparativo da evolução da entropia dos conjuntos G, H e I sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:evolucaoentropiaGHIMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetXVII03.png} 
+% \caption[Metodologia XVII: evolução da entropia nos conjuntos J e K]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos J e K sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:evolucaoentropiaJKMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.6]{fig/res/evolucaoentropiaMetXVII04.png} 
+% \caption[Metodologia XVII: evolução da entropia nos conjuntos L]{Gráfico com
+% comparativo da evolução da entropia dos conjuntos L sem e com GARCH na
+% Metodologia XVII}
+% \label{Figura:evolucaoentropiaLMet17}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1]{fig/res/evolucaoentropiaMetXVII05.png} 
+% \caption[Metodologia XVII: evolução da entropia]{Gráfico com comparativo da
+% evolução da entopia na Metodologia XVII}
+% \label{Figura:evolucaoentropiaPizzaMet17}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XVII: tempo de execução]{Tempo de execução (em segundos)
+dos algoritmos sem e com GARCH na Metodologia XVII. Primeiro é exibido o tempo de
+execução sem a utilização do modelo GARCH, depois com o modelo. Parâmetros
+modelo se refere ao tempo gasto pelo algoritmo para o cálculo dos parâmetros do
+modelo, Resíduo refere-se ao tempo gasto pelo modelo para calcular o resíduo do
+modelo, Cod. Arit. refere-se ao tempo gasto pela codificação aritmética para
+comprimir o resíduo.} \label{tab:EvolucaoEntropiaMet17}\\
+\midrule
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conj & \specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} &
+\specialcell{Parâmetros\\modelo} &
+Resíduo & \specialcell{Cod.\\Arit.} & \specialcell{Tempo\\total} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1&54&$<1$&3&57&611&2&3&617\\
+A2&37&$<1$&2&40&553&1&7&561\\
+A3&108&2&4&113&411&1&2&414\\
+B1&35&$<1$&2&37&633&1&1&634\\
+B2&34&$<1$&2&37&621&1&2&623\\
+B3&34&1&2&37&612&1&1&615\\
+C1&13&$<1$&1&14&57&1&3&61\\
+C2&16&$<1$&1&17&77&1&2&80\\
+C3&13&$<1$&1&14&85&1&3&89\\
+D1&14&$<1$&2&16&318&1&3&323\\
+D2&18&1&3&21&99&1&2&102\\
+D3&13&$<1$&1&14&88&$<1$&1&89\\
+E1&6&$<1$&$<1$&6&14&$<1$&$<1$&14\\
+E2&1&$<1$&$<1$&2&15&$<1$&$<1$&16\\
+E3&5&$<1$&$<1$&5&15&$<1$&$<1$&15\\
+F1&16&$<1$&2&19&68&1&2&72\\
+F2&12&$<1$&$<1$&13&219&$<1$&$<1$&219\\
+F3&14&$<1$&$<1$&15&341&$<1$&$<1$&342\\
+G1&6&$<1$&2&8&49&1&1&51\\
+G2&5&$<1$&1&7&57&$<1$&$<1$&57\\
+G3&6&$<1$&2&8&41&1&1&42\\
+H1&18&1&3&22&67&1&4&72\\
+H2&19&1&1&21&348&$<1$&1&349\\
+H3&27&1&3&31&127&$<1$&3&131\\
+I1&10&$<1$&1&11&222&1&1&224\\
+I2&25&$<1$&$<1$&25&242&1&1&244\\
+I3&4&$<1$&$<1$&4&45&$<1$&1&45\\
+J1&20&1&3&24&588&2&2&592\\
+J2&20&$<1$&1&21&561&$<1$&$<1$&562\\
+J3&49&1&4&54&1.494&$<1$&1&1.495\\
+K1&15&$<1$&1&15&261&1&2&264\\
+K2&20&$<1$&1&22&539&1&2&542\\
+K3&14&1&1&16&209&1&2&212\\
+L1&38&1&5&44&121&1&4&127\\
+L2&23&1&4&27&313&$<1$&1&315\\
+L3&24&$<1$&2&26&134&1&1&136\\
+L4&41&1&1&43&253&1&3&258\\
+L5&91&1&4&97&214&1&1&217\\
+L6&40&$<1$&5&45&168&1&5&174\\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetXVII00.png} 
+% \caption[Metodologia XVII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos A, B, C e D]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos A, B, C e D sem e com GARCH na Metodologia
+% XVII}
+% \label{Figura:tempocalculoABCDMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXVII01.png} 
+% \caption[Metodologia XVII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos E, F e G]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos E, F e G sem e com GARCH na Metodologia
+% XVII}
+% \label{Figura:tempocalculoEFGMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXVII02.png} 
+% \caption[Metodologia XVII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos H, I e J]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos H, I e J sem e com GARCH na Metodologia
+% XVII}
+% \label{Figura:tempocalculoHIJMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering 
+% \includegraphics[scale=1, angle=90]{fig/res/tempoexecMetXVII03.png} 
+% \caption[Metodologia XVII: tempo de cálculo dos parâmetros dos modelos dos
+% conjuntos K e L]{Gráfico com comparativo do tempo de cálculo dos
+% parâmetros dos modelos dos conjuntos K e L sem e com GARCH na Metodologia XVII}
+% \label{Figura:tempocalculoKLMet17}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/tempoexecMetXVII04.png} 
+% \caption[Metodologia XVII: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo do tempo total relativo de cálculo
+% dos parâmetros dos modelos sem e com GARCH na Metodologia XVII}
+% \label{Figura:tempocalculoPizzaMet17}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccc|cccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XVII: evolução da autocorrelação]{Autocorrelação do dado
+original e dos resíduos gerados sem e com a utilização do modelo GARCH na
+Metodologia XVII} \label{tab:EvolucaoAutocorrelacaoMet17}\\
+\midrule
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+Conjunto & \specialcell{Autocorrelação\\Inicial} & \specialcell{Autocorrelação\\Sem
+GARCH} & \specialcell{Autocorrelação\\Com GARCH} \\
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 6     & 0     & 1 \\
+A2    & 5     & 0     & 0 \\
+A3    & 6     & 0     & 0 \\
+B1    & 6     & 0     & 3 \\
+B2    & 6     & 0     & 3 \\
+B3    & 6     & 0     & 3 \\
+C1    & 2     & 7     & 7 \\
+C2    & 1     & 3     & 3 \\
+C3    & 2     & 3     & 3 \\
+D1    & 2     & 4     & 4 \\
+D2    & 2     & 3     & 3 \\
+D3    & 2     & 3     & 3 \\
+E1    & 4     & 0     & 0 \\
+E2    & 4     & 0     & 0 \\
+E3    & 4     & 0     & 0 \\
+F1    & 1     & 4     & 4 \\
+F2    & 6     & 3     & 1 \\
+F3    & 6     & 0     & 2 \\
+G1    & 1     & 1     & 1 \\
+G2    & 2     & 1     & 1 \\
+G3    & 6     & 1     & 1 \\
+H1    & 1     & 0     & 0 \\
+H2    & 1     & 0     & 0 \\
+H3    & 1     & 0     & 0 \\
+I1    & 7     & 1     & 1 \\
+I2    & 1     & 3     & 3 \\
+I3    & 1     & 4     & 4 \\
+J1    & 3     & 0     & 4 \\
+J2    & 3     & 2     & 0 \\
+J3    & 8     & 0     & 0 \\
+K1    & 3     & 2     & 1 \\
+K2    & 3     & 0     & 1 \\
+K3    & 2     & 2     & 1 \\
+L1    & 2     & 5     & 5 \\
+L2    & 7     & 0     & 0 \\
+L3    & 11    & 0     & 0 \\
+L4    & 7     & 0     & 1 \\
+L5    & 7     & 0     & 0 \\
+L6    & 6     & 0     & 0 \\
+
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetXVII00.png} 
+% \caption[Metodologia XVII: evolução da autocorrelação nos conjuntos A, B e
+% C]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos A, B e C na
+% Metodologia XVII}
+% \label{Figura:autocorrelacaoABCMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXVII01.png} 
+% \caption[Metodologia XVII: evolução da autocorrelação nos conjuntos D, E e
+% F]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos D, E e F na
+% Metodologia XVII}
+% \label{Figura:autocorrelacaoDEFMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXVII02.png} 
+% \caption[Metodologia XVII: evolução da autocorrelação nos conjuntos G, H e
+% I]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos G, H e I na
+% Metodologia XVII}
+% \label{Figura:autocorrelacaoGHIMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXVII03.png} 
+% \caption[Metodologia XVII: evolução da autocorrelação nos conjuntos J e
+% K]{Gráfico com comparativo da autocorrelação do resíduo gerado sem e com a
+% utilização do modelo GARCH em relação ao dado original nos conjuntos J e K na
+% Metodologia XVII}
+% \label{Figura:autocorrelacaoJKMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/evolucaoautocorrMetXVII04.png} 
+% \caption[Metodologia XVII: evolução da autocorrelação nos conjuntos L]{Gráfico
+% com comparativo da autocorrelação do resíduo gerado sem e com a utilização do modelo GARCH em relação ao dado original nos conjuntos L na
+% Metodologia XVII}
+% \label{Figura:autocorrelacaoLMet17}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.75]{fig/res/evolucaoautocorrMetXVII05.png} 
+% \caption[Metodologia XVII: tempo total relativo gasto no cálculo dos
+% parâmetros do modelo]{Gráfico com comparativo da redução relativa total da
+% autocorrelação do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia XVII}
+% \label{Figura:tempocalculoPizzaMet17}
+% \end{figure}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{ccccccccc}
+\toprule
+\rowcolor{white}
+\caption[Metodologia XVII: dados estatísticos]{Média e variância do dado original
+comparadas às do resíduo calculado sem e com a utilização do modelo GARCH na
+Metodologia XVII} \label{tab:DadosEstatisticosMet17}\\
+\midrule
+    Conjunto & \specialcell{Média\\Original} &
+    \specialcell{Var.\\Original} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\midrule
+\endfirsthead 
+%\multicolumn{8}{c}%
+%{\tablename\ \thetable\ -- \textit{Continuação da página anterior}} \\
+\midrule
+\rowcolor{white}
+    Conjunto & \specialcell{Média\\Orig.} &
+    \specialcell{Var.\\Orig.} & \specialcell{Média\\Sem\\GARCH} &
+    \specialcell{Var.\\Sem\\GARCH} & \specialcell{Média\\Com\\GARCH}&
+    \specialcell{Var.\\Com\\GARCH} \\
+
+\toprule
+\endhead
+\midrule \\ % \multicolumn{8}{r}{\textit{Continua na próxima página}} \\
+\endfoot
+\bottomrule 
+\endlastfoot
+A1    & 3,0E+04 & 1,8E+07 & 0,5   & 4,0E+05 & 1,8   & 4,2E+05 \\
+A2    & 3,2E+04 & 1,1E+07 & 0,5   & 3,2E+05 & -0,7  & 3,2E+05 \\
+A3    & 3,1E+04 & 1,4E+07 & 0,5   & 3,3E+05 & -0,7  & 3,4E+05 \\
+B1    & 2,8E+04 & 4,5E+05 & 0,4   & 1,1E+01 & 0,4   & 1,0E+02 \\
+B2    & 2,8E+04 & 4,5E+05 & 0,4   & 1,1E+01 & 0,4   & 1,0E+02 \\
+B3    & 2,8E+04 & 4,5E+05 & 0,4   & 1,1E+01 & 0,4   & 1,0E+02 \\
+C1    & 3,3E+04 & 8,1E+07 & 0,5   & 3,2E+07 & 0,4   & 3,2E+07 \\
+C2    & 3,3E+04 & 4,0E+07 & 0,5   & 2,0E+07 & 0,3   & 2,1E+07 \\
+C3    & 3,3E+04 & 5,7E+07 & 0,5   & 1,9E+07 & 1,2   & 1,9E+07 \\
+D1    & 3,7E+04 & 4,1E+07 & 0,6   & 9,5E+06 & 0,2   & 9,9E+06 \\
+D2    & 3,3E+04 & 1,2E+07 & 0,5   & 3,8E+06 & 5,7   & 3,9E+06 \\
+D3    & 3,1E+04 & 1,0E+07 & 0,2   & 2,9E+06 & -1,9  & 3,0E+06 \\
+E1    & 2,9E+04 & 5,8E+07 & -1,7  & 8,7E+07 & -9,8  & 8,7E+07 \\
+E2    & 3,0E+04 & 5,8E+07 & -0,8  & 8,7E+07 & -8,8  & 8,7E+07 \\
+E3    & 3,0E+04 & 6,0E+07 & -1,1  & 9,1E+07 & -9,3  & 9,1E+07 \\
+F1    & 3,8E+04 & 3,9E+07 & 0,5   & 1,5E+07 & 0,8   & 1,5E+07 \\
+F2    & 2,3E+04 & 5,4E+06 & 0,6   & 3,4E+05 & 0,4   & 3,7E+05 \\
+F3    & 2,6E+04 & 6,0E+06 & 0,6   & 7,0E+04 & 0,6   & 8,4E+04 \\
+G1    & 3,3E+04 & 3,3E+07 & 0,5   & 8,7E+06 & 0,7   & 8,7E+06 \\
+G2    & 3,8E+04 & 1,9E+07 & 0,5   & 4,0E+06 & 0,9   & 4,0E+06 \\
+G3    & 2,9E+04 & 3,6E+07 & 0,5   & 8,5E+06 & 0,6   & 8,5E+06 \\
+H1    & 3,1E+04 & 3,6E+07 & 0,7   & 5,2E+07 & 0,3   & 5,3E+07 \\
+H2    & 3,4E+04 & 8,1E+06 & 0,5   & 6,0E+06 & 8,6   & 6,1E+06 \\
+H3    & 3,2E+04 & 7,3E+06 & 0,5   & 5,2E+06 & 0,4   & 5,4E+06 \\
+I1    & 3,6E+04 & 1,2E+07 & 0,3   & 2,5E+06 & 5,0   & 2,5E+06 \\
+I2    & 2,9E+04 & 1,2E+06 & 0,6   & 1,2E+05 & -0,4  & 2,2E+05 \\
+I3    & 3,1E+04 & 3,3E+07 & 0,3   & 1,3E+07 & 4,1   & 1,3E+07 \\
+J1    & 3,7E+04 & 1,2E+06 & 0,5   & 1,1E+04 & 0,5   & 4,4E+04 \\
+J2    & 3,5E+04 & 1,5E+06 & 0,5   & 6,7E+04 & 0,5   & 9,4E+04 \\
+J3    & 3,3E+04 & 1,3E+06 & 0,5   & 1,0E+04 & 0,5   & 4,7E+04 \\
+K1    & 3,9E+04 & 6,9E+06 & 0,5   & 4,4E+05 & 0,6   & 5,5E+05 \\
+K2    & 4,0E+04 & 6,7E+06 & 0,5   & 1,6E+05 & 0,3   & 4,2E+05 \\
+K3    & 3,6E+04 & 5,8E+06 & 0,5   & 6,0E+05 & 0,6   & 6,2E+05 \\
+L1    & 3,4E+04 & 2,9E+07 & 0,5   & 1,0E+07 & -0,3  & 1,0E+07 \\
+L2    & 3,1E+04 & 1,5E+07 & 0,5   & 7,7E+06 & 1,9   & 8,1E+06 \\
+L3    & 3,5E+04 & 1,3E+07 & 0,5   & 8,9E+06 & -0,2  & 8,9E+06 \\
+L4    & 3,7E+04 & 1,8E+07 & 0,4   & 5,1E+06 & 4,6   & 8,6E+06 \\
+L5    & 3,1E+04 & 5,1E+07 & 0,5   & 1,5E+06 & 0,3   & 1,6E+06 \\
+L6    & 3,2E+04 & 2,6E+07 & 0,5   & 1,3E+06 & 0,4   & 1,3E+06 \\
+\end{longtable}
+\end{center}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXVII03.png} 
+% \caption[Metodologia XVII: Variância do conjunto A]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto A na Metodologia XVII}
+% \label{Figura:estatisticaAMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXVII00.png} 
+% \caption[Metodologia XVII: Variância do conjunto B]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto B na Metodologia XVII}
+% \label{Figura:estatisticaBMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXVII01.png} 
+% \caption[Metodologia XVII: Variância do conjunto C]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto C na Metodologia XVII}
+% \label{Figura:estatisticaCMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXVII02.png} 
+% \caption[Metodologia XVII: Variância dos conjuntos D e E]{Gráfico com comparativo
+% da variância original do dado e dos resíduos gerados pelos modelos sem e com
+% GARCH dos conjuntos D e E na Metodologia XVII}
+% \label{Figura:estatisticaDEMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.69]{fig/res/estatisticasMetXVII04.png} 
+% \caption[Metodologia XVII: Variância do conjunto F]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto F na Metodologia XVII}
+% \label{Figura:estatisticaFMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXVII05.png} 
+% \caption[Metodologia XVII: Variância dos conjuntos G, H e I]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos G, H e I na Metodologia XVII}
+% \label{Figura:estatisticaGHIMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXVII06.png} 
+% \caption[Metodologia XVII: Variância dos conjuntos J e K]{Gráfico
+% com comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH dos conjuntos J e K na Metodologia XVII}
+% \label{Figura:estatisticaJKMet17}
+% \end{figure}
+% 
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.8, angle=90]{fig/res/estatisticasMetXVII07.png} 
+% \caption[Metodologia XVII: Variância do conjunto L]{Gráfico com
+% comparativo da variância original do dado e dos resíduos gerados pelos modelos
+% sem e com GARCH do conjunto L na Metodologia XVII}
+% \label{Figura:estatisticaLMet17}
+% \end{figure}
+
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[scale=0.65]{fig/res/estatisticasMetXVII08.png} 
+% \caption[Metodologia XVII: redução relativa da variância]{Gráfico com comparativo
+% da redução relativa total da variância do resíduo sem e com a utilização do modelo GARCH na
+% Metodologia XVII}
+% \label{Figura:estatisticaPizzaMet17}
+% \end{figure}
